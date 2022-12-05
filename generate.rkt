@@ -1,4 +1,4 @@
-#lang racket
+#lang at-exp racket
 
 
 (require redex)
@@ -10,81 +10,120 @@
 ;; https://aclanthology.org/N13-1103.pdf
 ;; and CMPT 384 Lecture Notes Robert D. Cameron November 29 - December 1, 1999
 (define-language K13-Regex
+  ;; Top Level Expression `re`
   (re ::=
-      re-quantifiable
-      (* re-quantifiable) ;; 0-inf occurences of re
-      (+ re-quantifiable) ;; 1-inf occurences of re
-      (minrange re-quantifiable natural)
-      (repeat re-quantifiable natural))
-  (re-quantifiable ::=
-                   atom
-                   (anychar)
-                   (and re re re ...)
-                   (or re re re ...)
-                   (not re))
-  (atom ::= variable-not-otherwise-mentioned))
+      (repeat-capturing-group re+)
+      (min-range-capturing-group re+)
+      (min-max-range-capturing-group re+)
+      (* re+)
+      (+ re+)
+      (and re+ re+)
+      (or re+ re+)
+      (not re+)
+      re+)
+  ;; "Quantifiable" Regex
+  (re+ ::=
+       atom
+       (group re))
+  ;; Terminals
+  (atom ::=
+        <vowel>
+        <digit>
+        <uppercase-letter>
+        <lowercase-letter>
+        <string-literal> ; "word", "dog", "cat"
+        <any-character>))
 
-
-
-(define (k13regex->regex-str re)
+;https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt
+(require (prefix-in ra: data/ralist))
+(define WORDS (apply ra:list (file->lines "google-10000-english-no-swears.txt")))
+(define (random-word)
+  (ra:list-ref WORDS (random (ra:length WORDS))))
+(define (random-nat [min 1])
+  (random min (+ 7 min)))
+(define (->regex re)
   (match re
-    [x #:when (symbol? x) (symbol->string x)]
-    [`(and ,re* ...) (string-append "(" (string-join (map k13regex->regex-str re*) " & ") ")")]
-    [`(or ,re* ...) (string-append "(" (string-join (map k13regex->regex-str re*) " | ") ")")]
-    [`(not ,re) (string-append "~(" (k13regex->regex-str re) ")")]
-    [`(* ,re) (string-append (k13regex->regex-str re) "*")]
-    [`(+ ,re) (string-append (k13regex->regex-str re) "+")]
-    [`(anychar) "[A-Za-z]"]
-    [`(minrange ,re ,n) (string-append (k13regex->regex-str re) "{" (number->string n) ",}")]
-    [`(repeat ,re ,n) (string-append (k13regex->regex-str re) "{" (number->string n) "}")]
-    [`(range ,re ,n ,k) (string-append (k13regex->regex-str re) "{" (number->string n) "," (number->string k) "}")]))
+    ['<vowel> "[AEIOUaeiou]"]
+    ['<digit> "[0-9]"]
+    ['<uppercase-letter> "[A-Z]"]
+    ['<lowercase-letter> "[a-z]"]
+    ['<string-literal> (random-word)]
+    ['<any-character> "."]
+    [`(repeat-capturing-group ,re+)
+     (string-append (->regex re+) "{" (~a (random-nat)) "}")]
+    [`(min-range-capturing-group ,re+)
+     (string-append (->regex re+) "{" (~a (random-nat)) ",}")]
+    [`(min-max-range-capturing-group ,re+)
+     (define n (random-nat [min 1]))
+     (string-append (->regex re+) "{" (~a n) ","(~a (random-nat (add1 n)))"}")]
 
-(define (describe-k13regex-line re)
-  (string-append "lines with " (describe-k13regex re)))
+    ;; "Quantifiable" Regex
+    [`(group ,re) (string-append "(" (->regex re) ")")]
+    [`(and ,re1 ,re2) (string-append (->regex re1) "&" (->regex re2))]
+    [`(or ,re1 ,re2) (string-append (->regex re1) "|" (->regex re2))]
+    [`(not ,re) (string-append "~"(->regex re))]
+    [`(* ,re) (string-append (->regex re) "*")]
+    [`(+ ,re) (string-append (->regex re) "+")]))
 
-(define (describe-k13regex re)
+(define (choose ls)
+  (list-ref ls (random (length ls))))
+(define (->en re)
   (match re
-    [x #:when (symbol? x)
-       (let ((s (symbol->string x)))
-         (if (< 1 (string-length s))
-             (string-append "letters '" s "'")
-             (string-append "letter '" s "'")))]
-    [`(not (* ,re)) (string-append "zero or more of " (describe-k13regex re))]
-    [`(not (+ ,re)) (string-append "one or more of " (describe-k13regex re))]
-    [`(and ,re* ...) (string-append "" (string-join (map describe-k13regex re*) " and ") "")]
-    [`(or ,re* ...) (string-append "either " (string-join (map describe-k13regex re*) " or "))]
-    [`(not ,re) (string-append "not " (describe-k13regex re))]
-    [`(* ,re) (string-append "zero or more " (describe-k13regex re))]
-    [`(+ ,re) (string-append "at least one " (describe-k13regex re))]
-    [`(anychar) "any letter"]
-    [`(minrange ,re ,n) (string-append  (describe-k13regex re) " repeated at least " (number->string n) " times")]
-    [`(repeat ,re ,n) (string-append (describe-k13regex re) " repeated exactly " (number->string n) " times")]
-    [`(range ,re ,n ,k) (string-append (describe-k13regex re) " repeated " (number->string n) " to " (number->string k) " times")]))
+    ['<vowel> "a vowel"]
+    ['<digit> "a digit"]
+    ['<uppercase-letter> "an uppercase letter"]
+    ['<lowercase-letter> "a lowercase letter"]
+    ['<string-literal> (string-append "the word '" (random-word) "'")]
+    ['<any-character> "any character"]
+    [`(repeat-capturing-group ,re+)
+     (string-append  (->en re+) ", exactly " (~a (random-nat)) " times")]
+    [`(min-range-capturing-group ,re+)
+     (string-append (->en re+) " at least " (~a (random-nat)) " times")]
+    [`(min-max-range-capturing-group ,re+)
+     (define n (random-nat [min 1]))
+     (string-append (->en re+) ", between " (~a n) " and "(~a (random-nat (add1 n)))" times")]
+    ;; "Quantifiable" Regex
+    [`(group ,re) (string-append "" (->en re) "")]
+    [`(and ,re1 ,re2) (string-append (->en re1) " and " (->en re2))]
+    [`(or ,re1 ,re2) (string-append (->en re1) " or " (->en re2))]
+    [`(not ,re) (string-append "not " (->en re))]
+    [`(* ,re) (string-append (->en re) ", zero or more times")]
+    [`(+ ,re) (string-append (->en re) ", at least once")]))
 
 
-    
+
+
 ;; make-examples : Nat -> (Streamof PropositionalLogicExpr)
 (define (make-examples amt)
-  (let go ([acc (set)])
+  (for/stream ([i (in-range amt)])
+    (generate-term K13-Regex re 3)))
+  #;(let go ([acc (set)])
     (define new-term (generate-term K13-Regex re 3))
     (cond [(>= (set-count acc) amt) '()]
-          [(set-member? acc new-term) (go acc)]
-          [else (stream-cons new-term (go (set-add acc new-term)))])))
+          ;[(set-member? acc new-term) (go acc)]
+          [else (stream-cons new-term (go acc))]))
+
+(require "benchmark-datasets/zip.rkt")
+(define (write-text-files [n 10] [src-port (current-output-port)] [targ-port (current-output-port)] [seed 42])
+  (random-seed seed)
+  (define examples (stream->list (make-examples n)))
+  (random-seed seed)
+  (for ([e (in-list examples)])
+    (displayln (->regex e) targ-port))
+  (random-seed seed)
+  (for ([e (in-list examples)])
+    (displayln (->en e) src-port)))
 
 
-(define tgt (open-output-file "tgt.txt" #:exists 'truncate/replace))
-(define src (open-output-file "src.txt" #:exists 'truncate/replace))
-(define ds (open-output-file "ds.json" #:exists 'truncate))
-(require json)
-(for ((e (in-stream (make-examples 100000))))
-  (displayln (k13regex->regex-str e) tgt)
-  (displayln (describe-k13regex-line e) src)
-  (write-json (hash 'translation (hash 'en (describe-k13regex-line e) 'regex (k13regex->regex-str e))) ds)
-  (displayln "" ds))
+(define (write-dataset)
+  (define tgt (open-output-file "targ.txt" #:exists 'truncate/replace))
+  (define src (open-output-file "src.txt" #:exists 'truncate/replace))
+  (write-text-files 10000 src tgt)
+  (close-output-port tgt)
+  (close-output-port src)
 
-(close-output-port tgt)
-(close-output-port src)
-(close-output-port ds)
+  (write-translation-json  "src.txt" "targ.txt" "ds.json")
+  )
 
-
-  
+(module+ main
+  (time (write-dataset)))

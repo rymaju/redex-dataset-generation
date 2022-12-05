@@ -1,0 +1,824 @@
+{"translation":{"en":"lines which do not contain the letter 'e'.","regex":"~(.*e.*)"}}
+{"translation":{"en":"lines that contain only the letters 'agde'.","regex":"agde"}}
+{"translation":{"en":"lines using words  ending in 'er'.","regex":".*\\b[A-Za-z]*er\\b.*"}}
+{"translation":{"en":"lines which contain only lowercase letters.","regex":"[a-z]*"}}
+{"translation":{"en":"lines that contain the word 'dance'","regex":".*\\bdance\\b.*"}}
+{"translation":{"en":"lines with words that contain 3 vowels.","regex":".*((\\b[A-Za-z]+\\b)&(.*[AEIOUaeiou].*){3}).*"}}
+{"translation":{"en":"lines which have 'bar'","regex":".*bar.*"}}
+{"translation":{"en":"lines using a word that ends in 'spoon'","regex":".*((\\b[A-Za-z]+\\b)&(.*spoon)).*"}}
+{"translation":{"en":"lines that include three capital letters","regex":"(.*[A-Z].*){3}"}}
+{"translation":{"en":"lines using words that begin with 'z'.","regex":".*\\bz[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that have at least 5 numbers.","regex":"(.*[0-9].*){5,}"}}
+{"translation":{"en":"lines that ends with letter 'f'","regex":".*f"}}
+{"translation":{"en":"lines using a word that contains the letters 'der'","regex":".*\\b[A-Za-z]*der[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines using only three words","regex":"(([^A-Za-z])*\\b[A-Za-z]+\\b([^A-Za-z])*){3}"}}
+{"translation":{"en":"lines starting with 'uu' followed by words starting with 'z'.","regex":"uu.*\\bz[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that have 2 words using 4 letters","regex":"(.*\\b[A-Za-z]{4}\\b.*){2}"}}
+{"translation":{"en":"lines that have words ending in 'ing'","regex":".*\\b[A-Za-z]*ing\\b.*"}}
+{"translation":{"en":"lines which contain the word 'black' and the letter 'z'.","regex":"(.*\\bblack\\b.*)&(.*z.*)"}}
+{"translation":{"en":"lines that contain the number '254' at least twice.","regex":"(.*254.*){2}"}}
+{"translation":{"en":"lines containing the word 'art'","regex":".*\\bart\\b.*"}}
+{"translation":{"en":"lines with a word ending in 'aought' that contain only one word","regex":"([^A-Za-z])*\\b[A-Za-z]*aought\\b([^A-Za-z])*"}}
+{"translation":{"en":"lines which contain only an uppercase letter","regex":"[A-Z]"}}
+{"translation":{"en":"lines that contain at least one numeric in it.","regex":".*[0-9].*"}}
+{"translation":{"en":"lines that end in an 'o'","regex":".*o"}}
+{"translation":{"en":"lines that have all the letters 'a' , 'b' and 'c'","regex":"(.*a.*)&(.*b.*)&(.*c.*)"}}
+{"translation":{"en":"lines having words ending with 'ne'.","regex":".*\\b[A-Za-z]*ne\\b.*"}}
+{"translation":{"en":"lines that contain 'World War II' and contain 'casualties'.","regex":"(.*World War II.*)&(.*casualties.*)"}}
+{"translation":{"en":"lines that contain the numbers '9', and '10'","regex":".*(9.*10|10.*9).*"}}
+{"translation":{"en":"lines with the word 'Triple' followed by words that start with 'X'","regex":".*\\bTriple\\b.*\\bX[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines using 'su' after 'son' or 'soon'.","regex":".*(son|soon).*su.*"}}
+{"translation":{"en":"lines that utilize words starting with 'do'.","regex":".*(([A-Za-z]+)&(\\bdo.*\\b)).*"}}
+{"translation":{"en":"lines using 'q' before 'r'","regex":".*q.*r.*"}}
+{"translation":{"en":"lines containing a word using the letters 'tt'.","regex":".*\\b[A-Za-z]*tt[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines using more than 1 character","regex":".*.{2,}.*"}}
+{"translation":{"en":"lines that contain words with 'ru'.","regex":".*\\b[A-Za-z]*ru[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines containing a word using 'ause'","regex":".*\\b[A-Za-z]*ause[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines containing instances of 'JFK' found after 'ABC'","regex":".*ABC.*JFK.*"}}
+{"translation":{"en":"lines that contain at least three words and at least one number.","regex":"(.*\\b[A-Za-z][A-Za-z]*\\b.*){3}&(.*[0-9].*)"}}
+{"translation":{"en":"lines that contain numbers","regex":".*[0-9].*"}}
+{"translation":{"en":"lines using the word 'going' followed by 'd'.","regex":".*\\bgoing\\b.*d.*"}}
+{"translation":{"en":"lines that have 'sandwich' but not the word 'ham'","regex":"(.*sandwich.*)&(~(.*\\bham\\b.*))"}}
+{"translation":{"en":"lines containing words starting with 't'.","regex":".*((\\bt.*\\b)&([A-Za-z]+)).*"}}
+{"translation":{"en":"lines that contain words ending in 'g'","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(.*g)).*"}}
+{"translation":{"en":"lines that contain words ending with vowels.","regex":".*\\b[A-Za-z]*[AEIOUaeiou]\\b.*"}}
+{"translation":{"en":"lines that use words starting with 's'.","regex":".*\\bs[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines using 2 words or more","regex":"(.*\\b[A-Za-z]+\\b.*){2,}"}}
+{"translation":{"en":"lines using the word 'piggy' and 'his mother'.","regex":".*(.*\\bpiggy\\b.*)&(.*his mother.*)"}}
+{"translation":{"en":"lines that have 5 characters and no vowels.","regex":"(.{5})&(~(.*[AEIOUaeiou].*))"}}
+{"translation":{"en":"lines that contain at least one vowel and at least two numbers.","regex":"(.*[AEIOUaeiou].*)&(.*[0-9].*){2}"}}
+{"translation":{"en":"lines using at least 3 characters","regex":".*.{3}.*"}}
+{"translation":{"en":"lines that contain the phrase 'city of'.","regex":".*(.*\\bcity of\\b.*).*"}}
+{"translation":{"en":"lines that contain between two to seven words.","regex":"([^A-Za-z]*\\b[A-Za-z][A-Za-z]*\\b[^A-Za-z]*){2,7}"}}
+{"translation":{"en":"lines that use words starting with 'ga'.","regex":".*\\bga[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines any words beginning with the letter 'k'.","regex":".*((\\b[A-Za-z]+\\b)&(k.*)).*"}}
+{"translation":{"en":"lines containing any number with an '8' in it.","regex":".*8.*"}}
+{"translation":{"en":"lines which contain only the number '3'.","regex":"3"}}
+{"translation":{"en":"lines that contain words starting with 'pa'.","regex":".*\\bpa[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain only three words.","regex":"(([^A-Za-z])*\\b[A-Za-z]+\\b([^A-Za-z])*){3}"}}
+{"translation":{"en":"lines that mention 'Dylan' in the same line as 'Lynda'.","regex":"(.*Dylan.*Lynda.*)|(.*Lynda.*Dylan.*)"}}
+{"translation":{"en":"lines containing 'foo' or 'nu' before 'dist' or 'dust'","regex":".*(foo|nu).*(dist|dust).*"}}
+{"translation":{"en":"lines where the number '0' appears","regex":".*0.*"}}
+{"translation":{"en":"lines that feature 'email' followed by the word 'spam'.","regex":".*email.*\\bspam\\b.*"}}
+{"translation":{"en":"lines that have within them words ending in 'ch'.","regex":".*\\b[A-Za-z]*ch\\b.*"}}
+{"translation":{"en":"lines using the word 'clue'","regex":".*\\bclue\\b.*"}}
+{"translation":{"en":"lines that contain 'news' before 'paper' or 'show'.","regex":".*news.*(paper|show).*"}}
+{"translation":{"en":"lines that do not contain the word 'foo'","regex":"~(.*\\bfoo\\b.*)"}}
+{"translation":{"en":"lines using 'min' before 'imal'","regex":".*min.*imal.*"}}
+{"translation":{"en":"lines that include the string 'rst'","regex":".*rst.*"}}
+{"translation":{"en":"lines that contain at least two words starting with 'h' in them.","regex":"(.*\\bh[A-Za-z]*\\b.*){2}"}}
+{"translation":{"en":"lines using the word 'An' at least once.","regex":".*\\bAn\\b.*"}}
+{"translation":{"en":"lines that begin with a number","regex":"[0-9].*"}}
+{"translation":{"en":"lines that have words ending with 'ti'.","regex":".*\\b[A-Za-z]*ti\\b.*"}}
+{"translation":{"en":"lines that do not contain the character 'x'","regex":"~(.*x.*)"}}
+{"translation":{"en":"lines using words containing 'ope'.","regex":".*\\b[A-Za-z]*ope[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that use words starting with 'bi'.","regex":".*\\bbi[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines using 'oon'","regex":".*oon.*"}}
+{"translation":{"en":"lines using words beginning with the letter 'g'","regex":".*\\bg[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines containing any mention of the word 'code'.","regex":".*\\bcode\\b.*"}}
+{"translation":{"en":"lines that contain 5 words","regex":"(.*\\b[A-Za-z]+\\b.*){5}"}}
+{"translation":{"en":"lines that have a word beginning with th and a number that begins in '7'","regex":"(.*\\bth[A-Za-z]*\\b.*)&(.*7[0-9]*.*)"}}
+{"translation":{"en":"lines that have all of its letters capitalized.","regex":"~(.*[a-z].*)"}}
+{"translation":{"en":"lines using 'mno' after 'pqr'","regex":".*pqr.*mno.*"}}
+{"translation":{"en":"lines where there are two consecutive capital letters","regex":".*[A-Z][A-Z].*"}}
+{"translation":{"en":"lines containing a letter","regex":".*[A-Za-z].*"}}
+{"translation":{"en":"lines that contain the word 'orange'.","regex":".*\\borange\\b.*"}}
+{"translation":{"en":"lines using a word of 5 letters or less.","regex":".*\\b[A-Za-z]{1,5}\\b.*"}}
+{"translation":{"en":"lines that have words with 'la'.","regex":".*\\b[A-Za-z]*la[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that using the symbol '+' or '-'.","regex":".*(\\+|-).*"}}
+{"translation":{"en":"lines that contain the word 'Hindi'.","regex":".*\\bHindi\\b.*"}}
+{"translation":{"en":"lines using words containing 'e' before 'i'.","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(.*e.*i.*)).*"}}
+{"translation":{"en":"lines that have at least one capital letter.","regex":".*[A-Z].*"}}
+{"translation":{"en":"lines that have at least 3, but not more that 6 words.","regex":"([^A-Za-z]*\\b[A-Za-z]+\\b[^A-Za-z]*){3,6}"}}
+{"translation":{"en":"lines that contain 'mix' or 'shake'.","regex":".*mix.*|.*shake.*"}}
+{"translation":{"en":"lines that have 1 word in them","regex":".*\\b[A-Za-z][A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines where 'PQR' is between a number and 'LMNO'","regex":".*[0-9].*PQR.*LMNO.*|.*LMNO.*PQR.*[0-9].*"}}
+{"translation":{"en":"lines that have words with 7 letters.","regex":".*\\b[A-Za-z]{7}\\b.*"}}
+{"translation":{"en":"lines that have one number","regex":".*[0-9].*"}}
+{"translation":{"en":"lines containing 'a' before 'b'","regex":".*a.*b.*"}}
+{"translation":{"en":"lines containing 'h', or 'i'","regex":".*(h|i).*"}}
+{"translation":{"en":"lines that contain words starting with 'de'.","regex":".*((\\bde.*\\b)&([A-Za-z]+)).*"}}
+{"translation":{"en":"lines that include words starting with 'q'.","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(q.*)).*"}}
+{"translation":{"en":"lines that mention both 'butterflies' and 'fireflies'.","regex":"(.*butterflies.*)&(.*fireflies.*)"}}
+{"translation":{"en":"lines that contain 'ject' or 'pel'","regex":".*(ject|pel).*"}}
+{"translation":{"en":"lines that carry the word 'Jim' located in between 'Stacks' and 'Slim'.","regex":".*Stacks.*\\bJim\\b.*Slim.*|.*Slim.*\\bJim\\b.*Stacks.*"}}
+{"translation":{"en":"lines using at least 5 'd'","regex":"(.*d.*){5,}"}}
+{"translation":{"en":"lines that contain at least 2 digits.","regex":"(.*[0-9].*){2,}"}}
+{"translation":{"en":"lines using words with 'ca'.","regex":".*\\b[A-Za-z]*ca[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that have only 3 words","regex":"(([^A-Za-z])*\\b[A-Za-z]+\\b([^A-Za-z])*){3}"}}
+{"translation":{"en":"lines that have 2 or more numbers.","regex":"(.*[0-9].*){2,}"}}
+{"translation":{"en":"lines that have a 2 letter sequence","regex":".*[A-Za-z]{2}.*"}}
+{"translation":{"en":"lines that include words starting with 'fe'.","regex":"(.*((\\b[A-Za-z]+\\b)&(fe.*)).*).*"}}
+{"translation":{"en":"lines not containing 4 or more characters","regex":"~(.*.{4,}.*)"}}
+{"translation":{"en":"lines that end containing the letter 'z'.","regex":".*z"}}
+{"translation":{"en":"lines which have three words.","regex":"(.*\\b[A-Za-z]+\\b.*){3,}"}}
+{"translation":{"en":"lines with 'sec' before 'mun'.","regex":".*sec.*mun.*"}}
+{"translation":{"en":"lines that have two or more words ending in 'a'.","regex":".*(.*\\b[A-Za-z]*a\\b.*){2}.*"}}
+{"translation":{"en":"lines that have 6 words.","regex":"(.*\\b[A-Za-z]+\\b.*){6}"}}
+{"translation":{"en":"lines that do not contain any number","regex":"~(.*[0-9].*)"}}
+{"translation":{"en":"lines containing 'k', or 'l'","regex":".*(k|l).*"}}
+{"translation":{"en":"lines that contain words ending with 'mae'.","regex":".*\\b[A-Za-z]*mae\\b.*"}}
+{"translation":{"en":"lines that contain words starting with 'h'.","regex":".*\\bh[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines where the  word 'Homer' precedes the word 'Odyssey'","regex":".*\\bHomer\\b.*\\bOdyssey\\b.*"}}
+{"translation":{"en":"lines that do not contain the letter 'a'","regex":"~(.*a.*)"}}
+{"translation":{"en":"lines using the word 'hero'.","regex":".*\\bhero\\b.*"}}
+{"translation":{"en":"lines that have words starting with 'pi'.","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(pi.*)).*"}}
+{"translation":{"en":"lines that have words starting with 'kai'.","regex":".*\\bkai[A-Za-z]*\\b.*"}}
+{"translation":{"en":"Find lines that mention dogs or cats but not any with mice","regex":"(.*(dogs|cats).*)&(~(.*mice.*))"}}
+{"translation":{"en":"lines that use 'a' or 'b' before words ending with 'er'.","regex":".*(a|b).*\\b[A-Za-z]*er\\b.*"}}
+{"translation":{"en":"lines starting with 'abc'","regex":"abc.*"}}
+{"translation":{"en":"lines using three character words begining with the letters 'CE'.","regex":".*\\bCE[A-Za-z]\\b.*"}}
+{"translation":{"en":"lines that contain 3 words and have at least 2 numbers.","regex":".*(.*\\b[A-Za-z]+\\b.*){3}&(.*[0-9].*){2}.*"}}
+{"translation":{"en":"lines using 'abc' after 'def'","regex":".*def.*abc.*"}}
+{"translation":{"en":"lines which feature the word 'hairy'.","regex":".*\\bhairy\\b.*"}}
+{"translation":{"en":"lines containing the word 'crack'.","regex":".*\\bcrack\\b.*"}}
+{"translation":{"en":"lines that have at least three 'j'.","regex":"(.*j.*){3}"}}
+{"translation":{"en":"lines that have 'turn'","regex":".*turn.*"}}
+{"translation":{"en":"lines using 'ghi' after 'jkl'","regex":".*jkl.*ghi.*"}}
+{"translation":{"en":"lines which contain a mix of uppercase letters and lowercase letters","regex":"(.*[A-Z].*)&(.*[a-z].*)"}}
+{"translation":{"en":"lines where no word is more than 5 characters","regex":"~(.*\\b[A-Z-a-z]{6,}\\b.*)"}}
+{"translation":{"en":"lines using 'd' in the middle of a word.","regex":".*\\b[A-Za-z]+d[A-Za-z]+\\b.*"}}
+{"translation":{"en":"lines using 5 'd'","regex":"(.*d.*){5}"}}
+{"translation":{"en":"lines with capital letters","regex":".*[A-Z].*"}}
+{"translation":{"en":"lines containing 'e', or 'f'","regex":".*(e|f).*"}}
+{"translation":{"en":"lines using a 5 letter sequence","regex":".*[A-Za-z]{5}.*"}}
+{"translation":{"en":"lines which contain a word starting with 'ch'","regex":".*\\bch[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain words starting with 'po'.","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(po.*)).*"}}
+{"translation":{"en":"lines utilizing the word 'law'.","regex":".*.*\\blaw\\b.*"}}
+{"translation":{"en":"lines that have only one b.","regex":"([^b])*b([^b])*"}}
+{"translation":{"en":"lines that have the number '44'.","regex":".*44.*"}}
+{"translation":{"en":"lines that contain the letter 'A' followed by a vowel.","regex":".*A.*[AEIOUaeiou].*"}}
+{"translation":{"en":"lines that contain words with 'oo'.","regex":".*((\\b[A-Za-z]+\\b)&(.*oo.*)).*"}}
+{"translation":{"en":"lines which have at least 7 numbers.","regex":".*(.*[0-9].*){7}.*"}}
+{"translation":{"en":"lines which end with 'you'","regex":".*you"}}
+{"translation":{"en":"lines that contain words ending with 'ol'.","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(.*ol)).*"}}
+{"translation":{"en":"lines that contain a digit.","regex":".*[0-9].*"}}
+{"translation":{"en":"lines using a word having the string 'der'","regex":".*\\b[A-Za-z]*der[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that are 20 characters or less","regex":".{0,20}"}}
+{"translation":{"en":"lines containing a word","regex":".*\\b[A-Za-z]+\\b.*"}}
+{"translation":{"en":"lines that begin with the word 'once'.","regex":"once\\b.*"}}
+{"translation":{"en":"lines that contain words starting with 'ac'.","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(ac.*)).*"}}
+{"translation":{"en":"lines that have 4 words or less where at least 1 of those words contains the letter sequence 'uin'.","regex":"([^A-Za-z]*\\b[A-Za-z]+\\b[^A-Za-z]*){0,4}&(.*((\\b[A-Za-z]+\\b)&(.*uin.*)).*){1,}"}}
+{"translation":{"en":"lines that contain words ending in 'n'","regex":".*\\b[A-Za-z]*n\\b.*"}}
+{"translation":{"en":"lines that have 'eye'","regex":".*eye.*"}}
+{"translation":{"en":"lines that contain three letter words in them.","regex":".*\\b[A-Za-z]{3}\\b.*"}}
+{"translation":{"en":"lines that contain five letter words.","regex":".*\\b[A-Za-z]{5}\\b.*"}}
+{"translation":{"en":"lines which do not have 'life'.","regex":"~(.*life.*)"}}
+{"translation":{"en":"lines which start with a number.","regex":"[0-9].*"}}
+{"translation":{"en":"lines that start with a 'z' and end with an 'a'.","regex":"z.*a"}}
+{"translation":{"en":"lines that have instances of a number and a vowel","regex":"(.*[0-9].*)&(.*[AEIOUaeiou].*)"}}
+{"translation":{"en":"lines which have both uppercase letters and lowercase letters.","regex":"(.*[A-Z].*)&(.*[a-z].*)"}}
+{"translation":{"en":"lines containing 5 letter words.","regex":".*\\b[A-Za-z]{5}\\b.*"}}
+{"translation":{"en":"lines that match 'billy' or 'bob'.","regex":".*(billy|bob).*"}}
+{"translation":{"en":"lines which contain five or more 'y'","regex":"(.*y.*){5,}"}}
+{"translation":{"en":"lines that include words starting with 'ne'.","regex":".*\\bne[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines containing words that start with 'x'","regex":".*\\bx[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines containing 'ge' or 'an' before 'ger' or 'tra'","regex":".*(ge|an).*(ger|tra).*"}}
+{"translation":{"en":"lines that end with 'gh'","regex":".*gh"}}
+{"translation":{"en":"lines which contain 'sorry'","regex":".*sorry.*"}}
+{"translation":{"en":"lines with 'tch' but not 'wi'.","regex":"(.*tch.*)&(~(.*wi.*))"}}
+{"translation":{"en":"lines that start with 'far'","regex":"far.*"}}
+{"translation":{"en":"lines using words that end in 'y' or 'i'.","regex":".*\\b[A-Za-z]*(y|i)\\b.*"}}
+{"translation":{"en":"lines that contain the number '2005' and 'May' and begin with 'Mary'.","regex":"(.*2005.*)&(.*May.*)&(Mary.*)"}}
+{"translation":{"en":"lines with an '8' that comes after a '5'.","regex":".*5.*8.*"}}
+{"translation":{"en":"lines utilizing words starting with 'w'.","regex":".*((w.*)&(\\b[A-Za-z][A-Za-z]*\\b)).*"}}
+{"translation":{"en":"lines containing words that start with 'th'","regex":".*\\bth[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain 'ig' or 'physics' before 'nobel'.","regex":".*(ig|physics).*nobel.*"}}
+{"translation":{"en":"lines containing 'st' and containing 'gy' too","regex":"(.*st.*)&(.*gy.*)"}}
+{"translation":{"en":"lines that contain the text 'NOW'","regex":".*NOW.*"}}
+{"translation":{"en":"lines that contain the text 'hello'","regex":".*hello.*"}}
+{"translation":{"en":"lines that contain five words that begin with 'P'.","regex":".*(.*\\bP[A-Za-z]*\\b.*){5}.*"}}
+{"translation":{"en":"lines that have words ending with 'ge'.","regex":".*\\b[A-Za-z]*ge\\b.*"}}
+{"translation":{"en":"Look for any line with the '@' symbol.","regex":".*\\@.*"}}
+{"translation":{"en":"lines using an instance of 'itch'","regex":".*itch.*"}}
+{"translation":{"en":"lines containing three vowels","regex":"(.*[AEIOUaeiou].*){3}"}}
+{"translation":{"en":"lines containing 'ers' and containing 'oxy' too","regex":"(.*ers.*)&(.*oxy.*)"}}
+{"translation":{"en":"lines that have more than 6 numbers.","regex":"(.*[0-9].*){7,}"}}
+{"translation":{"en":"lines with the word 'Goal' in them.","regex":".*((\\b[A-Za-z]+\\b)&(Goal)).*"}}
+{"translation":{"en":"lines beginning with 'Therefore'","regex":"Therefore.*"}}
+{"translation":{"en":"lines using 2 or more words containing the letters 'ing'.","regex":"(.*(\\b[A-Za-z]+\\b&(.*ing.*)).*){2,}"}}
+{"translation":{"en":"lines that have the word 'love' preceeding the word 'you'.","regex":".*\\blove\\b.*\\byou\\b.*"}}
+{"translation":{"en":"lines which contain a 3 letter string starting with a","regex":".*(a[A-Za-z]{2}).*"}}
+{"translation":{"en":"lines starting with a 'T'.","regex":"T.*"}}
+{"translation":{"en":"lines that contain the letters 'ba'.","regex":".*ba.*"}}
+{"translation":{"en":"lines that are composed of 4 or more words.","regex":"(.*\\b[A-Za-z]+\\b.*){4,}"}}
+{"translation":{"en":"lines using the word 'George' and the number '62'.","regex":".*(.*\\bGeorge\\b.*)&(.*62.*).*"}}
+{"translation":{"en":"lines utilizing words starting with 'b'.","regex":".*\\bb[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that use the word 'boom' followed by words starting with 'ka'","regex":".*\\bboom\\b.*\\bka[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that end in a number","regex":".*[0-9]"}}
+{"translation":{"en":"lines that use words with 'ce'.","regex":".*((\\b[A-Za-z]+\\b)&(.*ce.*)).*"}}
+{"translation":{"en":"lines which have at least 1 numeric character.","regex":".*[0-9].*"}}
+{"translation":{"en":"lines that contain at least one word starting with 'q'.","regex":".*\\bq[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that have 'twist'","regex":".*twist.*"}}
+{"translation":{"en":"lines containing words that start with and end with 'xyz'","regex":"xyz(.*xyz)?"}}
+{"translation":{"en":"lines containing 'x' and containing 'y' too","regex":"(.*x.*)&(.*y.*)"}}
+{"translation":{"en":"lines that contain words ending with 'la'.","regex":".*\\b[A-Za-z]*la\\b.*"}}
+{"translation":{"en":"lines that have 3 numbers and contain the word 'Columbia'.","regex":"(.*[0-9].*){3}&(.*\\bColumbia\\b.*)"}}
+{"translation":{"en":"lines that contain at least one number.","regex":".*[0-9].*"}}
+{"translation":{"en":"lines that contain words starting with 'ke'.","regex":".*((\\b[A-Za-z]+\\b)&(ke.*)).*"}}
+{"translation":{"en":"lines that contain a word using at most 6 letters","regex":".*\\b[A-Za-z]{1,6}\\b.*"}}
+{"translation":{"en":"lines using 'ent' or 'ong'","regex":".*(ent|ong).*"}}
+{"translation":{"en":"lines containing words using a vowel.","regex":".*\\b[A-Za-z]*[aeiouAEIOU][A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines with words ending in 'y'.","regex":".*\\b[A-Za-z]*y\\b.*"}}
+{"translation":{"en":"lines that contain 2 numbers that contain '19'.","regex":"(.*19.*){2}"}}
+{"translation":{"en":"lines that contain at least 2 capital letters.","regex":"(.*[A-Z].*){2,}"}}
+{"translation":{"en":"lines containing a 6 letter sequence","regex":".*[A-Za-z]{6}.*"}}
+{"translation":{"en":"lines where the letter c appears more than one time","regex":"(.*c.*){2,}"}}
+{"translation":{"en":"lines which contain only vowels.","regex":"[AEIOUaeiou]*"}}
+{"translation":{"en":"lines that contain words ending in 'i'.","regex":".*\\b[A-Za-z]*i\\b.*"}}
+{"translation":{"en":"lines containing 'ast'","regex":"(.*ast.*).*"}}
+{"translation":{"en":"lines using 'the'","regex":".*the.*"}}
+{"translation":{"en":"lines containing 'on' and also containing 'off'","regex":"(.*on.*)&(.*off.*)"}}
+{"translation":{"en":"lines that mention 'trolls'.","regex":".*trolls.*"}}
+{"translation":{"en":"lines that contain at least one vowel and at least two numbers","regex":"((.*[AEIOUaeiou].*)&(.*[0-9].*){2})"}}
+{"translation":{"en":"lines that begin with the word 'the'","regex":"\\bthe\\b.*"}}
+{"translation":{"en":"lines that contain words with 'ri'.","regex":".*\\b[A-Za-z]*ri[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines which contain 3 or more vowels.","regex":"(.*[AEIOUaeiou].*){3,}"}}
+{"translation":{"en":"lines using 3 instances of 'sw'","regex":".*(.*sw.*){3}.*"}}
+{"translation":{"en":"lines that contain instances of 'ape', but only if its one of the first three words.","regex":"([^A-Za-z]*\\b[A-Za-z]+\\b[^A-Za-z]*){0,2}[^A-Za-z]*\\bape\\b.*"}}
+{"translation":{"en":"lines which contain a word starting with the letter 'a' and a word starting with the letter 'z'.","regex":"(.*\\ba[A-Za-z]*\\b.*)&(.*\\bz[A-Za-z]*\\b.*)"}}
+{"translation":{"en":"lines that show 'May' and 'June'.","regex":".*(.*May.*)&(.*June.*).*"}}
+{"translation":{"en":"lines that use words starting with 'no'.","regex":".*\\bno[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain the text 'this is it'.","regex":".*this is it.*"}}
+{"translation":{"en":"lines that start with 'the'.","regex":"(the.*).*"}}
+{"translation":{"en":"lines that show the letter 'a' and number '5'.","regex":"(.*a.*)&(.*5.*)"}}
+{"translation":{"en":"lines using 'din' after 'e' or 'ky'.","regex":".*(e|ky).*din.*"}}
+{"translation":{"en":"lines that contain both a 'B' and a 'b'.","regex":"(.*B.*)&(.*b.*)"}}
+{"translation":{"en":"lines that have a '7' in them","regex":".*7.*"}}
+{"translation":{"en":"lines using at least 6 characters","regex":".*.{6}.*"}}
+{"translation":{"en":"lines that contain the word 'zoo'.","regex":".*\\bzoo\\b.*"}}
+{"translation":{"en":"lines using the vowel combination 'ei'.","regex":".*ei.*"}}
+{"translation":{"en":"lines containing at least 2 words","regex":"(.*\\b[A-Za-z]+\\b.*){2,}"}}
+{"translation":{"en":"lines containing the word 'run' or the word 'hat'","regex":".*\\b(run|hat)\\b.*"}}
+{"translation":{"en":"lines containing at least 2 characters but not 4 characters or more","regex":".{2,3}"}}
+{"translation":{"en":"lines with no vowels","regex":"~(.*[AEIOUaeiou].*)"}}
+{"translation":{"en":"lines using words that contain the letter 'q'.","regex":".*((\\b[A-Za-z]+\\b)&(.*q.*)).*"}}
+{"translation":{"en":"lines containing the word 'shoe' and containing the word 'lace'","regex":"(.*\\bshoe\\b.*)&(.*\\blace\\b.*)"}}
+{"translation":{"en":"lines using 2 or more words comprised of 5 letters","regex":"(.*\\b[A-Za-z]{5}\\b.*){2,}"}}
+{"translation":{"en":"lines starting with 're'","regex":"re.*"}}
+{"translation":{"en":"lines that contain 'in'","regex":".*in.*"}}
+{"translation":{"en":"lines using 'ick'","regex":".*ick.*"}}
+{"translation":{"en":"lines that contain words starting with 'ki'.","regex":".*\\bki[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that end in a digit","regex":".*[0-9]"}}
+{"translation":{"en":"lines that have two vowels","regex":"(.*[AEIOUaeiou].*){2}"}}
+{"translation":{"en":"lines having words starting with 'di'.","regex":".*\\bdi[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain five vowels","regex":"(.*[AEIOUaeiou].*){5}"}}
+{"translation":{"en":"lines containing 'tt' and containing 'bb' too","regex":"(.*tt.*)&(.*bb.*)"}}
+{"translation":{"en":"lines that contain the word 'hello' within 5 characters of the word 'world'.","regex":".*(\\bhello\\b.{1,5}\\bworld\\b|\\bworld\\b.{1,5}\\bhello\\b).*"}}
+{"translation":{"en":"lines that end with the number '100'.","regex":".*100"}}
+{"translation":{"en":"lines which begin with the word 'how'","regex":"((\\b[A-Za-z]+\\b)&(how)).*"}}
+{"translation":{"en":"lines using at least three numerical characters","regex":"(.*[0-9].*){3,}"}}
+{"translation":{"en":"lines that do not have the letter 'a'","regex":"~(.*a.*)"}}
+{"translation":{"en":"lines that contain words ending in 'ch'","regex":".*\\b[A-Za-z]*ch\\b.*"}}
+{"translation":{"en":"lines that contain the word 'trust'.","regex":".*\\btrust\\b.*"}}
+{"translation":{"en":"lines which contain the letter 'x' and the letter 'y'","regex":"(.*x.*)&(.*y.*)"}}
+{"translation":{"en":"lines that have a word of 3 letters","regex":".*\\b[A-Za-z]{3}\\b.*"}}
+{"translation":{"en":"lines that end with 'boby'","regex":".*boby"}}
+{"translation":{"en":"lines that have the word 'couch' included","regex":".*\\bcouch\\b.*"}}
+{"translation":{"en":"lines that contain at least five words.","regex":"(.*\\b[A-Za-z][A-Za-z]*\\b.*){5,}"}}
+{"translation":{"en":"lines which have a th after a 'ch'.","regex":".*ch.*th.*"}}
+{"translation":{"en":"lines which contain the letter 'z' twice.","regex":"(.*z.*){2,}"}}
+{"translation":{"en":"lines that end with '2' and contain words that begin with 'Sel'","regex":".*\\bSel[A-Za-z]*\\b.*2"}}
+{"translation":{"en":"lines containing either a 'w' or 's' character.","regex":".*(w|s).*"}}
+{"translation":{"en":"lines which contain 2 or more 'q'.","regex":"(.*q.*){2,}"}}
+{"translation":{"en":"lines that contain words starting with 'an'.","regex":".*\\ban[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines having words ending with 'fa'.","regex":".*((\\b[A-Za-z]+\\b)&(.*fa)).*"}}
+{"translation":{"en":"lines ending with 'vem'","regex":".*vem"}}
+{"translation":{"en":"lines containing words starting with the letter 'x'.","regex":".*\\bx[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines with 7 or more words","regex":"(.*\\b[A-Za-z]+\\b.*){7,}"}}
+{"translation":{"en":"lines that contain 'jellyfish' and mention 'breeding'.","regex":"(.*jellyfish.*)&(.*breeding.*)"}}
+{"translation":{"en":"lines that contain 5 or more letters","regex":".*(.*[A-Za-z].*){5,}.*"}}
+{"translation":{"en":"lines that contain words ending with 'le'.","regex":".*((\\b.*le\\b)&([A-Za-z]+)).*"}}
+{"translation":{"en":"lines that contain words and 4 numbers.","regex":"(.*\\b[A-Za-z]+\\b.*)&(.*[0-9].*){4}"}}
+{"translation":{"en":"lines that contain words ending with 'd'.","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(.*d)).*"}}
+{"translation":{"en":"lines using a word containing the letter 'l'.","regex":".*((\\b[A-Za-z]+\\b)&(.*l.*)).*"}}
+{"translation":{"en":"lines containing the word 'inoperative'.","regex":".*\\binoperative\\b.*"}}
+{"translation":{"en":"lines with all words beginning with 'a'.","regex":"~(.*((\\b[A-Za-z]+\\b)&(~(a.*))).*)"}}
+{"translation":{"en":"lines that end with 'you'.","regex":".*you"}}
+{"translation":{"en":"lines that contain 4 letter words ending in 's'","regex":".*\\b[A-Za-z]{3}s\\b.*"}}
+{"translation":{"en":"lines which contain the letter 'h' preceded by a letter.","regex":".*[A-Za-z].*h.*"}}
+{"translation":{"en":"lines which have the word 'egg'","regex":".*\\begg\\b.*"}}
+{"translation":{"en":"lines that contain 'is' or 'it'","regex":".*(is|it).*"}}
+{"translation":{"en":"lines using 'ss' between 'a' and 'le'","regex":".*a.*ss.*le.*"}}
+{"translation":{"en":"lines that have at least two words that start with 's'.","regex":"(.*\\bs[A-Za-z]*\\b.*){2}"}}
+{"translation":{"en":"lines comprised of 5 or more words containing 5 or fewer letters","regex":"(.*((\\b[A-Za-z]+\\b)&([A-Za-z]{0,5})).*){5,}"}}
+{"translation":{"en":"lines that contain a number ending with '0'","regex":".*[0-9]*0.*"}}
+{"translation":{"en":"lines that end with the word 'free'.","regex":".*\\bfree"}}
+{"translation":{"en":"lines which contain 'ead' or 'pro'","regex":".*(ead|pro).*"}}
+{"translation":{"en":"lines that contain the word 'and'","regex":".*\\band\\b.*"}}
+{"translation":{"en":"lines using 4 letter words","regex":".*\\b[A-Za-z]{4}\\b.*"}}
+{"translation":{"en":"lines that contain words starting with 'gi'.","regex":".*((\\b[A-Za-z]+\\b)&(gi.*)).*"}}
+{"translation":{"en":"lines that utilize words starting with 'pu'.","regex":".*((\\b[A-Za-z]+\\b)&(pu.*)).*"}}
+{"translation":{"en":"lines that end in 'e'","regex":".*e"}}
+{"translation":{"en":"lines end in an 'a'","regex":".*a"}}
+{"translation":{"en":"lines that have at least three words beginning with a vowel.","regex":"(.*\\b[AEIOUaeiou][A-Za-z]*\\b.*){3}"}}
+{"translation":{"en":"lines which contain a 3 letter string","regex":".*([A-Za-z]{3}).*"}}
+{"translation":{"en":"lines with 'car' between 'try' and 'say'.","regex":".*try.*car.*say.*|.*say.*car.*try.*"}}
+{"translation":{"en":"lines that contain the word 'the'","regex":".*\\bthe\\b.*"}}
+{"translation":{"en":"lines that contain the number '10'.","regex":".*10.*"}}
+{"translation":{"en":"lines that contain 6 letter words beginning with the letter 'y'.","regex":".*\\by[A-Za-z]{5}\\b.*"}}
+{"translation":{"en":"lines that contain a word starting with a vowel.","regex":".*\\b[AEIOUaeiou][A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines with 'helper' where the word 'little' comes before 'helper'.","regex":"(.*helper.*)&(.*\\blittle\\b.*helper.*)"}}
+{"translation":{"en":"lines containing an instance of the name 'Beaker'.","regex":".*Beaker.*"}}
+{"translation":{"en":"lines which contain 'qu' at the start","regex":"qu.*"}}
+{"translation":{"en":"lines that show 'Mr' and 'Mrs' but not 'Ms' or 'Miss'.","regex":"((.*Mr.*)&(.*Mrs.*)&(~(.*(Ms|Miss).*)))"}}
+{"translation":{"en":"lines that include 'Canada' and 'Mexico' but not 'Cuba'.","regex":"(.*Canada.*)&(.*Mexico.*)&(~(.*Cuba.*))"}}
+{"translation":{"en":"lines which contain a word ending in 'ing'.","regex":".*\\b[A-Za-z]*ing\\b.*"}}
+{"translation":{"en":"lines that contain 'tumeric' and 'saffron'","regex":"(.*tumeric.*)&(.*saffron.*)"}}
+{"translation":{"en":"lines that start with 'apartheid'.","regex":"apartheid.*"}}
+{"translation":{"en":"lines containing words that start with 'h' and end with 'e'.","regex":".*\\bh[A-Za-z]*e\\b.*"}}
+{"translation":{"en":"lines containing both 'ac' and 'dc'","regex":"(.*ac.*)&(.*dc.*)"}}
+{"translation":{"en":"lines composed with a word","regex":".*\\b[A-Za-z]+\\b.*"}}
+{"translation":{"en":"lines which do not contain a vowel.","regex":"~(.*[AEIOUaeiou].*)"}}
+{"translation":{"en":"lines using words beginning with the letter 'x'.","regex":".*\\bx[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines containing words that end with 'L'","regex":".*\\b[A-Za-z]*L\\b.*"}}
+{"translation":{"en":"lines that contain words beginning in 'p'","regex":".*\\bp[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain the word 'sea' followed by at least one number.","regex":".*\\bsea\\b.*[0-9].*"}}
+{"translation":{"en":"lines that contain a word containing 5 or more letters.","regex":".*\\b[A-Za-z]{5,}\\b.*"}}
+{"translation":{"en":"lines that contain at least three five letter words","regex":"(.*\\b[A-Za-z]{5}\\b.*){3}"}}
+{"translation":{"en":"lines that contain 'ugly' before 'betty' or 'thomas'.","regex":".*ugly.*(betty|thomas).*"}}
+{"translation":{"en":"lines that contain words starting with 'fa'.","regex":".*\\bfa[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain 'fu' before 'ba' or 'bar'.","regex":".*fu.*(ba|bar).*"}}
+{"translation":{"en":"lines using more than 4 characters","regex":".*.{5,}.*"}}
+{"translation":{"en":"lines that contain any three vowels","regex":"(.*[AEIOUaeiou].*){3}"}}
+{"translation":{"en":"lines having words ending with 'ta'.","regex":".*((\\b.*ta\\b)&([A-Za-z]+)).*"}}
+{"translation":{"en":"lines which contain 'I am mad'.","regex":".*I am mad.*"}}
+{"translation":{"en":"lines that use words that are only four letters long.","regex":".*\\b[A-Za-z]{4}\\b.*"}}
+{"translation":{"en":"lines that have five words that all end with the letter 'G'.","regex":"(.*((\\b.*G\\b)&([A-Za-z]+)).*){5}"}}
+{"translation":{"en":"lines containing words that start with 'i'.","regex":".*\\bi[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines containing 'mean' or 'nic' before 'est' or 'test'","regex":".*(mean|nic).*(est|test).*"}}
+{"translation":{"en":"lines that use words with 'ca'.","regex":".*((\\b[A-Za-z]+\\b)&(.*ca.*)).*"}}
+{"translation":{"en":"lines that have ten words.","regex":"(.*\\b[A-Za-z]+\\b.*){10}"}}
+{"translation":{"en":"lines containing 'tain' after 're' or 'per'.","regex":".*(re|per).*tain.*"}}
+{"translation":{"en":"lines that end in 'o'","regex":".*o"}}
+{"translation":{"en":"lines that contain 'x' and 'y' but not 'z'.","regex":"(.*x.*)&(.*y.*)&(~(.*z.*))"}}
+{"translation":{"en":"lines that end in 'e'","regex":".*e"}}
+{"translation":{"en":"lines having the letters 'ea'.","regex":".*((ea)&([A-Za-z]*)).*"}}
+{"translation":{"en":"lines that begin with 'The' or 'For'.","regex":"(The|For).*"}}
+{"translation":{"en":"lines that contain the letter 'V' and the number '33'.","regex":"(.*V.*)&(.*33.*)"}}
+{"translation":{"en":"lines starting with 'X' followed by a word with 'oa'.","regex":"X.*((\\b[A-Za-z]+\\b)&(.*oa.*)).*"}}
+{"translation":{"en":"lines that end with the letter 'o'","regex":".*o"}}
+{"translation":{"en":"lines using any instance of 'd' or 'e' followed by 's' or 'r'","regex":".*(d|e).*(s|r).*"}}
+{"translation":{"en":"lines that contain a word and five numbers.","regex":"(.*\\b[A-Za-z][A-Za-z]*\\b.*)&(.*[0-9].*){5}"}}
+{"translation":{"en":"lines where 'TRY' is separated from 'LOL' with a comma","regex":".*TRY.*\\,.*LOL.*|.*LOL.*\\,.*TRY.*"}}
+{"translation":{"en":"lines that contin words ending in 'e'.","regex":".*\\b[A-Za-z]*e\\b.*"}}
+{"translation":{"en":"lines containing the word 'blog'","regex":".*\\bblog\\b.*"}}
+{"translation":{"en":"lines using a word","regex":".*\\b[A-Za-z]+\\b.*"}}
+{"translation":{"en":"lines which have 'oo', but no instances of 'o' between the letters 'd' and 'a'","regex":"(.*oo.*)&(~(.*d.*o.*a.*|.*a.*o.*d.*))"}}
+{"translation":{"en":"lines having words ending with 'en'.","regex":".*\\b[A-Za-z]*en\\b.*"}}
+{"translation":{"en":"lines that contain three letter words.","regex":".*\\b[A-Za-z]{3}\\b.*"}}
+{"translation":{"en":"lines using a 3 letter sequence","regex":".*[A-Za-z]{3}.*"}}
+{"translation":{"en":"lines which contain 'upper' or 'lower'","regex":".*(upper|lower).*"}}
+{"translation":{"en":"lines that have the word 'sandwich'","regex":".*sandwich.*"}}
+{"translation":{"en":"lines ending in 'ia'","regex":".*ia"}}
+{"translation":{"en":"lines that begin with the phrase 'once upon a time'","regex":"once upon a time.*"}}
+{"translation":{"en":"lines that utilize the letters 'as'.","regex":".*as.*"}}
+{"translation":{"en":"lines that contain the word 'unifax' but not the word 'colorado'.","regex":"(.*\\bunifax\\b.*)&(~(.*\\bcolorado\\b.*))"}}
+{"translation":{"en":"lines using the word 'Westbury' next to a number.","regex":"(.*\\bWestbury\\b.*)&(.*[0-9].*)"}}
+{"translation":{"en":"lines with 'helper' and 'little'","regex":"(.*little.*)&(.*helper.*)"}}
+{"translation":{"en":"lines that contain digits.","regex":".*[0-9].*"}}
+{"translation":{"en":"lines that contain three 'she'.","regex":"(.*she.*){3}"}}
+{"translation":{"en":"lines that contain exactly two words.","regex":"(([^A-Za-z])*\\b[A-Za-z]+\\b([^A-Za-z])*){2}"}}
+{"translation":{"en":"lines using words that begin with 'q' but do not have a 'u'.","regex":".*\\b(([A-Za-z]+)&(q.*)&(~(.*u.*)))\\b.*"}}
+{"translation":{"en":"lines that contain words starting with 'du'.","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(du.*)).*"}}
+{"translation":{"en":"lines beginning with words that have a vowel as the first letter.","regex":"\\b[AEIOUaeiou][A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that begin with a numeral","regex":"[0-9].*"}}
+{"translation":{"en":"lines which contain the word 'mobile' but do not contain the word 'phone'","regex":"(.*\\bmobile\\b.*)&~(.*\\bphone\\b.*)"}}
+{"translation":{"en":"lines containing words that begin with 'G' and end with 'y'","regex":".*\\bG[A-Za-z]*y\\b.*"}}
+{"translation":{"en":"lines containing at least 3 words","regex":"(.*\\b[A-Za-z]+\\b.*){3,}"}}
+{"translation":{"en":"lines that have 'JFK' but not 'WAS'","regex":"(.*JFK.*)&(~(.*WAS.*))"}}
+{"translation":{"en":"lines that contain the phrase 'Booyah'.","regex":".*Booyah.*"}}
+{"translation":{"en":"lines that contain both the word 'bar' and the word 'stress'","regex":".*(.*\\bbar\\b.*)&(.*\\bstress\\b.*).*"}}
+{"translation":{"en":"lines that contain words that have the letter 'e' occuring after the letter 'c'.","regex":".*\\b[A-Za-z]*c[A-Za-z]*e[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain 3 numbers and one number contains 1.","regex":"(.*[0-9].*)&(.*1.*)"}}
+{"translation":{"en":"lines which begin with 'omega'","regex":"omega.*"}}
+{"translation":{"en":"lines using words ending with 'mo'.","regex":".*((\\b.*mo\\b)&([A-Za-z]+)).*"}}
+{"translation":{"en":"lines that contain the word 'Boby'.","regex":".*\\bBoby\\b.*"}}
+{"translation":{"en":"lines containing usage of the word 'fried'.","regex":".*\\bfried\\b.*"}}
+{"translation":{"en":"lines with words that contain 3 letters","regex":".*\\b[A-Za-z]{3}\\b.*"}}
+{"translation":{"en":"lines that use words ending with 'ot'.","regex":".*\\b[A-Za-z]*ot\\b.*"}}
+{"translation":{"en":"lines using more than 3 characters","regex":".*.{4,}.*"}}
+{"translation":{"en":"lines that contain the word 'null'","regex":".*\\bnull\\b.*"}}
+{"translation":{"en":"lines using a word which contains at least 5 letters.","regex":".*\\b[A-Za-z]{5,}\\b.*"}}
+{"translation":{"en":"lines that use words of at least 9 letters.","regex":".*\\b[A-Za-z]{9,}\\b.*"}}
+{"translation":{"en":"lines that match the words 'and in this life'.","regex":".*\\band in this life\\b.*"}}
+{"translation":{"en":"lines that contain at least 4 words.","regex":"(.*\\b[A-Za-z]+\\b.*){4,}"}}
+{"translation":{"en":"lines using at least 3 'b'","regex":"(.*b.*){3,}"}}
+{"translation":{"en":"lines that contain an 'x'","regex":".*x.*"}}
+{"translation":{"en":"lines that contain the symbol '-'.","regex":".*-.*"}}
+{"translation":{"en":"3 letter lines starting with 'x'","regex":"x[A-Za-z]{2}"}}
+{"translation":{"en":"lines containing 'pol' or 'mi' before 'ist' or 'lk'","regex":".*(pol|mi).*(ist|lk).*"}}
+{"translation":{"en":"lines that have at least 2 words of 3 or more letters","regex":"(.*\\b[A-Za-z]{3,}\\b.*){2,}"}}
+{"translation":{"en":"lines that contain '-' between words 'a' and 'lot'.","regex":".*(\\ba\\b.*\\-.*\\blot\\b|\\blot\\b.*\\-.*\\ba\\b).*"}}
+{"translation":{"en":"lines with words that end in 'n'.","regex":".*\\b[A-Za-z]*n\\b.*"}}
+{"translation":{"en":"lines using 'lay' or 'lie'","regex":".*l(ay|ie).*"}}
+{"translation":{"en":"lines that show 's' in the beginning of the word  and 't' at the end of the word.","regex":".*((\\bs[A-Za-z]*\\b)&(\\b[A-Za-z]*t\\b)).*"}}
+{"translation":{"en":"lines that have 'de' before 'st' and 're' after 'col'.","regex":"(.*de.*st.*)&(.*col.*re.*)"}}
+{"translation":{"en":"lines which contain 5 words starting with 'f'","regex":"(.*\\bf[A-Za-z]*\\b.*){5,}"}}
+{"translation":{"en":"lines which mention 'puppy'.","regex":".*puppy.*"}}
+{"translation":{"en":"lines that contain DEF' with a period immediately after it.'","regex":".*DEF\\..*"}}
+{"translation":{"en":"lines using the word 'intellectual'","regex":".*\\bintellectual\\b.*"}}
+{"translation":{"en":"lines containing 'ant'","regex":".*ant.*"}}
+{"translation":{"en":"lines which have the word 'number' and a number","regex":"(.*\\bnumber\\b.*)&(.*[0-9].*)"}}
+{"translation":{"en":"lines using words ending with 'on'.","regex":".*\\b[A-Za-z]*on\\b.*"}}
+{"translation":{"en":"lines that end with 'bar' and include the phrase 'San Jose'.","regex":"(.*bar)&(.*San Jose.*)"}}
+{"translation":{"en":"lines that use words starting with 'fu'.","regex":".*\\bfu[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines beginning with 'begin'","regex":"begin.*"}}
+{"translation":{"en":"lines that contain words ending in 'e'.","regex":".*(.*\\b[A-Za-z]*e\\b.*).*"}}
+{"translation":{"en":"lines that start with a vowel and ends in an 'e'.","regex":"[AEIOUaeiou].*e"}}
+{"translation":{"en":"lines starting with the word 'the'.","regex":"\\bthe\\b.*"}}
+{"translation":{"en":"lines that contain 1 to 5 numbers and 1 letter.","regex":"([^0-9]*[0-9][^0-9]*){1,5}&(.*[A-Za-z].*)"}}
+{"translation":{"en":"lines that end with 'and'","regex":".*and"}}
+{"translation":{"en":"lines that utilize 'pan' following words starting with 'pe'.","regex":".*\\bpe[A-Za-z]*\\b.*pan.*"}}
+{"translation":{"en":"lines that have the word 'Facebook'","regex":".*\\bFacebook\\b.*"}}
+{"translation":{"en":"lines that have words with 're'.","regex":".*\\b[A-Za-z]*re[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that have 3 or more words containing the letters 'ly'.","regex":"(.*((\\b[A-Za-z]+\\b)&(.*ly.*)).*){3,}"}}
+{"translation":{"en":"lines with instances of 'ABC' between 'XYX' and a comma","regex":".*XYX.*ABC.*\\,.*|.*\\,.*ABC.*XYX.*"}}
+{"translation":{"en":"lines that have a word containing 'a' or 'b'","regex":".*\\b([A-Za-z]+&.*(a|b).*)\\b.*"}}
+{"translation":{"en":"lines using the word 'of' or the word 'in'","regex":"(.*\\bof\\b.*)|(.*\\bin\\b.*)"}}
+{"translation":{"en":"lines containing two or more words containing 'y'.","regex":"(.*\\b[A-Za-z]*y[A-Za-z]*\\b.*){2,}"}}
+{"translation":{"en":"lines that contain at least one 'z'","regex":".*z.*"}}
+{"translation":{"en":"lines that contain a word using the letters 'ire'","regex":".*((\\b[A-Za-z]+\\b)&(.*ire.*)).*"}}
+{"translation":{"en":"lines that have 'ser' after 'lin' or 'ku'.","regex":".*(lin|ku).*ser.*"}}
+{"translation":{"en":"lines that have three words comprised of 4 characters each.","regex":".*(.*\\b[A-Za-z]{4}\\b.*){3}.*"}}
+{"translation":{"en":"lines ending in 'az'","regex":".*az"}}
+{"translation":{"en":"lines which begin with the letter 'z'.","regex":"z.*"}}
+{"translation":{"en":"lines containing 'ku' after 'mar' or 'is'.","regex":".*(mar|is).*ku.*"}}
+{"translation":{"en":"lines that contain 2 numbers and 3 words and contain the letter 't'.","regex":".*(.*[0-9].*){2}&(.*\\b[A-Za-z]+\\b.*){3}&(.*t.*).*"}}
+{"translation":{"en":"lines that include one word using at least 2 letters","regex":".*\\b[A-Za-z]{2,}\\b.*"}}
+{"translation":{"en":"lines that have a capital 'A', but not a lowercase 'a'.","regex":"(.*A.*)&(~(.*a.*))"}}
+{"translation":{"en":"lines that start with the letter 'e' followed by the word 'jr'.","regex":"e.*\\bjr\\b.*"}}
+{"translation":{"en":"lines containing 'b', or 'c'","regex":".*(b|c).*"}}
+{"translation":{"en":"lines that contain 'Beaker' but do not contain 'Bunsen'.","regex":"(.*Beaker.*)&(~(.*Bunsen.*))"}}
+{"translation":{"en":"lines where '4' is between '3' and '5'","regex":".*3.*4.*5.*|.*5.*4.*3.*"}}
+{"translation":{"en":"lines that contain a word in all uppercase.","regex":".*\\b[A-Z]+\\b.*"}}
+{"translation":{"en":"lines which start with the word 'The'","regex":"\\bThe\\b.*"}}
+{"translation":{"en":"lines containing 3 or more vowels and 5 or more words","regex":"(.*[AEIOUaeiou].*){3,}&(.*\\b[A-Za-z]+\\b.*){5,}"}}
+{"translation":{"en":"lines that contain words starting with 'bo'.","regex":".*\\bbo[A-Za-z]*\\b.*"}}
+{"translation":{"en":"6 letter lines","regex":"[A-Za-z]{6}"}}
+{"translation":{"en":"lines with 'ock'","regex":".*ock.*"}}
+{"translation":{"en":"lines using a capital letter followed by a number","regex":".*[A-Z].*[0-9].*"}}
+{"translation":{"en":"lines that start with 'ABC' and end with 'TRY'","regex":"ABC.*TRY"}}
+{"translation":{"en":"lines ending with 'cem'","regex":".*cem"}}
+{"translation":{"en":"lines that contain a number.","regex":".*[0-9].*"}}
+{"translation":{"en":"lines that have words ending with a 'g'","regex":".*((\\b.*g\\b)&([A-Za-z]+)).*"}}
+{"translation":{"en":"lines that contain 2 repetitions of the word 'a'","regex":"(.*\\ba\\b.*){2}"}}
+{"translation":{"en":"lines that utilize words starting with 'ko'.","regex":".*\\bko[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that show the text '1:15' and the word 'midnight'.","regex":"(.*1:15.*)&(.*\\bmidnight\\b.*)"}}
+{"translation":{"en":"lines that contain three or more digits","regex":"(.*[0-9].*){3}"}}
+{"translation":{"en":"lines using 'ness' or 'ed'","regex":".*(ness|ed).*"}}
+{"translation":{"en":"lines that are only comprised of uppercase letters.","regex":"[A-Z]*"}}
+{"translation":{"en":"lines using 'lugg' before 'age'","regex":".*lugg.*age.*"}}
+{"translation":{"en":"lines with the word 'and' between 'zyx' and 'cba'","regex":".*zyx.*\\band\\b.*cba.*|.*cba.*\\band\\b.*zyx.*"}}
+{"translation":{"en":"lines containing the number 11 and the word 'eleven'.","regex":"(.*11.*)&(.*eleven.*)"}}
+{"translation":{"en":"lines that are composed of the letters 'a', 'b', and 'd'.","regex":"(a|b|d)*"}}
+{"translation":{"en":"lines that mention 'Randy' and also contain 'fox'","regex":"(.*Randy.*)&(.*fox.*)"}}
+{"translation":{"en":"lines utilizing '!'","regex":".*\\!.*"}}
+{"translation":{"en":"lines that end with vowels.","regex":".*[AEIOUaeiou]"}}
+{"translation":{"en":"lines that have 'ace' after 'pl' or 'tr'.","regex":".*(pl|tr).*ace.*"}}
+{"translation":{"en":"lines starting with 'tra'","regex":"tra.*"}}
+{"translation":{"en":"lines containing one instance of 'ca' followed by an 'r' or a 't'","regex":".*(.*ca.*(r|t).*).*"}}
+{"translation":{"en":"lines where there are exactly two words and 7 characters.","regex":"((([^A-Za-z])*\\b[A-Za-z]+\\b([^A-Za-z])*){2}&.{7})"}}
+{"translation":{"en":"lines that have 3 words and two numbers.","regex":"(.*\\b[A-Za-z]+\\b.*){3}&(.*[0-9].*){2}"}}
+{"translation":{"en":"lines using words starting with 'fi'.","regex":".*\\bfi[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines with 'buck'","regex":".*buck.*"}}
+{"translation":{"en":"lines containing words which begin with 'c' and end with 'd'","regex":".*\\bc[A-Za-z]*d\\b.*"}}
+{"translation":{"en":"lines containg the number '9'.","regex":".*9.*"}}
+{"translation":{"en":"lines that utilize words starting with 'ni' followed by the word 'knight'","regex":".*((\\b[A-Za-z]+\\b)&(ni.*)).*\\bknight\\b.*"}}
+{"translation":{"en":"lines which begin with 'y', has a 'z' in the middle and end in a number.","regex":"y.*z.*[0-9]"}}
+{"translation":{"en":"lines containing 'tal' and containing 'tel' too","regex":"(.*tal.*)&(.*tel.*)"}}
+{"translation":{"en":"lines that contain the 'staphyloccus aureus.'","regex":".*staphyloccus aureus.*"}}
+{"translation":{"en":"lines that use 'Jane' but not 'Janet' or '2'.","regex":"(.*Jane.*)&(~(.*(Janet|2).*))"}}
+{"translation":{"en":"lines that contain words starting with 'go'.","regex":".*\\bgo[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain only 2 words, and, begin with the letter 'f'.","regex":"f.*&(([^A-Za-z])*\\b[A-Za-z]+\\b([^A-Za-z])*){2}"}}
+{"translation":{"en":"lines containing only four words.","regex":"(([^A-Za-z])*\\b[A-Za-z]+\\b([^A-Za-z])*){4}"}}
+{"translation":{"en":"lines which do not contain 'excellent'","regex":"~(.*excellent.*)"}}
+{"translation":{"en":"lines that end with 'hey'","regex":".*hey"}}
+{"translation":{"en":"lines that have no instances of 'old' but at least one instance of 'ion'.","regex":"(~(.*old.*))&((.*ion.*){1,})"}}
+{"translation":{"en":"lines that utilize words starting with 'r'.","regex":".*\\br[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines using words that end with the letter 'n'","regex":".*\\b[A-Za-z]*n\\b.*"}}
+{"translation":{"en":"lines that use numbers.","regex":".*[0-9].*"}}
+{"translation":{"en":"lines having words starting with 'fo'.","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(fo.*)).*"}}
+{"translation":{"en":"lines using words that have 'ire'","regex":".*\\b[A-Za-z]*ire[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that only have 3 words","regex":"(([^A-Za-z])*\\b[A-Za-z]+\\b([^A-Za-z])*){3}"}}
+{"translation":{"en":"lines that contain words starting in 's'","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(s.*)).*"}}
+{"translation":{"en":"lines that contain text made up of more than 6 letters total.","regex":"(.*[A-Za-z].*){7,}"}}
+{"translation":{"en":"lines that contain the letter 'a' in the middle of a word.","regex":".*(\\b[A-Za-z]+a[A-Za-z]+\\b).*"}}
+{"translation":{"en":"lines where the letter 'b' appears exactly 4 times","regex":"([^b]*b[^b]*){4}"}}
+{"translation":{"en":"lines that contain a word  starting with 'l'.","regex":".*\\bl[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain a word with five or more vowels.","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(.*[AEIOUaeiou].*){5}).*"}}
+{"translation":{"en":"lines which do not begin with an uppercase letter.","regex":"~([A-Z].*)"}}
+{"translation":{"en":"lines which start with 'n' and end with 'y'","regex":"(n.*)&(.*y)"}}
+{"translation":{"en":"lines that contain at least two words beginging with 'y'.","regex":"(.*\\by[A-Za-z]*\\b.*){2}"}}
+{"translation":{"en":"lines that have a word containing the string 'ude'","regex":".*\\b[A-Za-z]*ude[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines having words with 'ro'.","regex":".*\\b[A-Za-z]*ro[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines using 4 or more words","regex":"(.*\\b[A-Za-z]+\\b.*){4,}"}}
+{"translation":{"en":"lines using at least 4 'c'","regex":"(.*c.*){4,}"}}
+{"translation":{"en":"lines starting with 'cl'","regex":"cl.*"}}
+{"translation":{"en":"lines that contain 'number' written in words.","regex":".*number.*"}}
+{"translation":{"en":"lines that have at least 3 words.","regex":"(.*\\b[A-Za-z]+\\b.*){3}"}}
+{"translation":{"en":"lines which have 3 words.","regex":".*(.*\\b[A-Za-z]+\\b.*){3}.*"}}
+{"translation":{"en":"lines utilizing the phrase 'this is it'.","regex":".*this is it.*"}}
+{"translation":{"en":"lines that contain words starting with 'ba'.","regex":".*((\\b[A-Za-z]+\\b)&(ba.*)).*"}}
+{"translation":{"en":"lines using the vowel combination 'ou' and 'th'.","regex":"(.*ou.*)&(.*th.*)"}}
+{"translation":{"en":"lines which contain 'rh' but do not contain the letter 'y'.","regex":"(.*rh.*)&~(.*y.*)"}}
+{"translation":{"en":"lines that have any instance of 'ight'.","regex":".*ight.*"}}
+{"translation":{"en":"lines using the letter sequence 'ably' followed by a word ending in 'ed'.","regex":".*ably.*\\b[A-Za-z]*ed\\b.*"}}
+{"translation":{"en":"lines having words ending with 'lo'.","regex":".*\\b[A-Za-z]*lo\\b.*"}}
+{"translation":{"en":"lines that feature 'c' or 'd' before words that start with capital letters.","regex":".*(c|d).*\\b[A-Z][A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines using 'foo' between 'car' and 'cop'","regex":".*(car.*foo.*cop|cop.*foo.*car).*"}}
+{"translation":{"en":"lines that list the word 'Bean'.","regex":".*\\bBean\\b.*"}}
+{"translation":{"en":"lines which have at least one word which has six or more letters.","regex":".*\\b[A-Za-z]{6,}\\b.*"}}
+{"translation":{"en":"lines containing vowels","regex":".*[AEIOUaeiou].*"}}
+{"translation":{"en":"lines starting with 'sign'","regex":"sign.*"}}
+{"translation":{"en":"lines that utilize words starting with 'ab'.","regex":".*\\bab[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain numbers.","regex":".*[0-9].*"}}
+{"translation":{"en":"lines containing 4 words.","regex":"(.*\\b[A-Za-z]+\\b.*){4,}"}}
+{"translation":{"en":"lines that have three numbers between 'abc' and 'def'.","regex":".*(abc.*(.*[0-9].*){3}.*def|.*def.*(.*[0-9].*){3}.*abc).*"}}
+{"translation":{"en":"lines that use 'native' and 'tribes'.","regex":"(.*native.*)&(.*tribes.*)"}}
+{"translation":{"en":"lines that does not contain any vowels.","regex":"~(.*[AEIOUaeiou].*)"}}
+{"translation":{"en":"lines that have 5 or more words of 3 or fewer letters.","regex":"(.*\\b[A-Za-z]{1,3}\\b.*){5,}"}}
+{"translation":{"en":"lines that contain a '?' or an '!'.","regex":"(.*\\?.*)|(.*!.*)"}}
+{"translation":{"en":"lines that begin with a number","regex":"[0-9].*"}}
+{"translation":{"en":"lines that contain at least 2 digits.","regex":"(.*[0-9].*){2,}"}}
+{"translation":{"en":"lines that use a numerical number.","regex":".*[0-9].*"}}
+{"translation":{"en":"lines that contain words using 'ie'","regex":".*\\b[A-Za-z]*ie[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain 'fast' and contain '2'","regex":"(.*fast.*)&(.*2.*)"}}
+{"translation":{"en":"lines where there is only one word.","regex":"[^A-Za-z]*\\b[A-Za-z]+\\b[^A-Za-z]*"}}
+{"translation":{"en":"lines containing only a letter","regex":"[A-Za-z]"}}
+{"translation":{"en":"lines containing the word 'country'","regex":".*\\bcountry\\b.*"}}
+{"translation":{"en":"lines that have words containing 'ei'","regex":".*\\b[A-Za-z]*ei[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain words ending in 'os'","regex":".*\\b[A-Za-z]*os\\b.*"}}
+{"translation":{"en":"lines that have words ending in 'ing'.","regex":".*\\b[A-Za-z]*ing\\b.*"}}
+{"translation":{"en":"lines that include both 'cake' and 'candles'.","regex":"(.*cake.*)&(.*candles.*)"}}
+{"translation":{"en":"lines using 1 number and 2 letters","regex":".*(.*[0-9].*)&(.*[A-Za-z].*){2}.*"}}
+{"translation":{"en":"lines using five letter words.","regex":".*\\b[A-Za-z]{5}\\b.*"}}
+{"translation":{"en":"lines containing 'sing' or 'sung'","regex":".*(sing|sung).*"}}
+{"translation":{"en":"lines using 6 instances of 'fu'","regex":".*(.*fu.*){6}.*"}}
+{"translation":{"en":"lines that have at least 6 characters","regex":".{6,}"}}
+{"translation":{"en":"lines that have six letter words ending in 'th'.","regex":".*\\b[A-Za-z]{4}th\\b.*"}}
+{"translation":{"en":"lines containing the word 'pray' at the end.","regex":".*\\bpray"}}
+{"translation":{"en":"lines that contain 5 numbers and 2 words that contain 'ly'.","regex":".*(.*[0-9].*){5}&(.*\\b[A-Za-z]*ly[A-Za-z]*\\b.*){2}.*"}}
+{"translation":{"en":"lines that utilize only three words","regex":"(([^A-Za-z])*\\b[A-Za-z]+\\b([^A-Za-z])*){3}"}}
+{"translation":{"en":"lines using 'Bill' or 'bill'","regex":".*(B|b)ill.*"}}
+{"translation":{"en":"lines that have no vowels.","regex":"~(.*[AEIOUaeiou].*)"}}
+{"translation":{"en":"lines that have a number in them","regex":".*[0-9].*"}}
+{"translation":{"en":"lines that contain 7 or more words","regex":"(.*\\b[A-Za-z]+\\b.*){7}"}}
+{"translation":{"en":"lines using words starting with 'be'.","regex":".*((\\b[A-Za-z]+\\b)&(be.*)).*"}}
+{"translation":{"en":"lines that use words ending with 'at'.","regex":".*\\b[A-Za-z]*at\\b.*"}}
+{"translation":{"en":"lines which mention 'Pat' with the word 'turkey'.","regex":".*(.*Pat.*)&(.*\\bturkey\\b.*).*"}}
+{"translation":{"en":"lines that have a number, but only if it is followed by 'ABC'","regex":".*[0-9].*ABC.*"}}
+{"translation":{"en":"lines that contain two words that have two letters.","regex":"(.*\\b[A-Za-z]{2}\\b.*){2}"}}
+{"translation":{"en":"lines that end in 'y' and begins in 'a'.","regex":"a.*y"}}
+{"translation":{"en":"lines that match to the text 'I went into'.","regex":".*I went into.*"}}
+{"translation":{"en":"lines which end with 'hula'","regex":".*hula"}}
+{"translation":{"en":"lines that begins with the word 'total'.","regex":"total\\b.*"}}
+{"translation":{"en":"lines using the word 'God'.","regex":".*(.*\\bGod\\b.*).*"}}
+{"translation":{"en":"lines that utilize words starting with 'bu'.","regex":".*(([A-Za-z]+)&(\\bbu.*\\b)).*"}}
+{"translation":{"en":"lines that contain 'Freddie Mercury' and contain 'AIDS'.","regex":"(.*Freddie Mercury.*)&(.*AIDS.*)"}}
+{"translation":{"en":"lines that are composed of 5 words or less where at least one word begins with the letter 'k'.","regex":"(([^A-Za-z]*\\b[A-Za-z]+\\b[^A-Za-z]*){0,5})&(.*\\bk[A-Za-z]*\\b.*)"}}
+{"translation":{"en":"lines that contain three words that start with the letter 'Y'.","regex":"(.*\\bY[A-Za-z]*\\b.*){3}"}}
+{"translation":{"en":"lines that contain a 3 letter word and a 2 letter word.","regex":".*(.*\\b[A-Za-z]{3}\\b.*)&(.*\\b[A-Za-z]{2}\\b.*).*"}}
+{"translation":{"en":"lines that contain a word starting with 'a' and ending with 'a'","regex":".*\\ba([A-Za-z]*a)?\\b.*"}}
+{"translation":{"en":"lines that start with words containing 'w'.","regex":"\\b[A-Za-z]*w[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that use the number '33'.","regex":".*33.*"}}
+{"translation":{"en":"lines which start with 'alpha'","regex":"alpha.*"}}
+{"translation":{"en":"lines that have only two words in them.","regex":"(([^A-Za-z])*\\b[A-Za-z]+\\b([^A-Za-z])*){2}"}}
+{"translation":{"en":"lines that contain 4 or more 'b'","regex":"(.*b.*){4}"}}
+{"translation":{"en":"lines containing words using the letters 'ers'.","regex":".*\\b[A-Za-z]*ers[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines which have instances of 'tch'.","regex":".*tch.*"}}
+{"translation":{"en":"lines using the string 'gue'","regex":".*gue.*"}}
+{"translation":{"en":"lines that have 'aba' between 'bcb' and 'cbc'","regex":".*bcb.*aba.*cbc.*|.*cbc.*aba.*bcb.*"}}
+{"translation":{"en":"lines containing the country name 'New Zealand'.","regex":".*New Zealand.*"}}
+{"translation":{"en":"lines which contain both 'i' and 'e' but no instances of 'u'.","regex":"(.*i.*)&(.*e.*)&(~(.*u.*))"}}
+{"translation":{"en":"lines that contain a number and contain a 3 letter word.","regex":"(.*\\b[A-Za-z]{3}\\b.*)&(.*[0-9].*)"}}
+{"translation":{"en":"lines which start with 'start'","regex":"start.*"}}
+{"translation":{"en":"lines using 'ox' before 'en'","regex":".*ox.*en.*"}}
+{"translation":{"en":"lines containing 'l' before 'y'","regex":".*l.*y.*"}}
+{"translation":{"en":"lines that begin with 'a' and end with 'z'","regex":"a.*z"}}
+{"translation":{"en":"lines containing 'lake' and containing the word 'house'","regex":".*lake.*&(.*\\bhouse\\b.*)"}}
+{"translation":{"en":"lines using 5 or more words.","regex":"(.*\\b[A-Za-z]+\\b.*){5}"}}
+{"translation":{"en":"lines that contain words with at least 3 vowels","regex":".*((\\b[A-Za-z]+\\b)&(.*[AEIOUaeiou].*){3}).*"}}
+{"translation":{"en":"lines that have 'eak' after 'red'","regex":".*red.*eak.*"}}
+{"translation":{"en":"lines containing the word 'preordained'.","regex":".*\\bpreordained\\b.*"}}
+{"translation":{"en":"lines that feature the word 'moot', and at least 3 words of 6 letters or more.","regex":"(.*\\bmoot\\b.*)&(.*\\b[A-Za-z]{6,}\\b.*){3,}"}}
+{"translation":{"en":"lines using 2 instances of 'irl'","regex":".*(.*irl.*){2}.*"}}
+{"translation":{"en":"lines that contain 4 or more capital letters","regex":".*(.*[A-Z].*){4}.*"}}
+{"translation":{"en":"lines that end with 'after'","regex":".*after"}}
+{"translation":{"en":"lines that contain four letter words.","regex":".*\\b[A-Za-z]{4}\\b.*"}}
+{"translation":{"en":"lines that start with 'iffl'","regex":"iffl.*"}}
+{"translation":{"en":"lines that contain 'on'","regex":".*on.*"}}
+{"translation":{"en":"lines that begin with a number and end with 'street' or 'avenue'.","regex":"[0-9].*(street|avenue)"}}
+{"translation":{"en":"lines with vowels","regex":".*[AEIOUaeioui].*"}}
+{"translation":{"en":"lines using 'lives', 'lifes', or 'life'","regex":".*li(ves|fes|fe).*"}}
+{"translation":{"en":"lines that contain the text 'then I said'.","regex":".*then I said.*"}}
+{"translation":{"en":"lines that contain the word 'movie' in them.","regex":".*\\bmovie\\b.*"}}
+{"translation":{"en":"lines that have less than 6 words but more than 3 words.","regex":"([^A-Za-z]*\\b[A-Za-z]+\\b[^A-Za-z]*){0,5}&(.*\\b[A-Za-z]+\\b.*){4,}"}}
+{"translation":{"en":"lines using at least 2 instances of 'ly'","regex":"(.*ly.*){2,}"}}
+{"translation":{"en":"lines containing words that start with 'fa'","regex":".*\\bfa[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines containing 'GHF', but not 'JFK'","regex":"(.*GHF.*)&(~(.*JFK.*))"}}
+{"translation":{"en":"lines which have words beginning with 'H'.","regex":".*\\bH[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines where there is at least one word in which 'e' follows 'i'","regex":".*((\\b[A-Za-z][A-Za-z]*\\b)&(.*i.*e.*)).*"}}
+{"translation":{"en":"lines having words ending with 'te'.","regex":".*((\\b[A-Za-z]+\\b)&(.*te)).*"}}
+{"translation":{"en":"lines that contain words that end in 'y' that do not begin with 'w'","regex":".*((\\b[A-Za-z]+\\b)&(.*y)&(~(w.*))).*"}}
+{"translation":{"en":"lines that contain 5 or more words.","regex":".*(.*\\b[A-Za-z][A-Za-z]*\\b.*){5}.*"}}
+{"translation":{"en":"lines that contain words ending in 'az'","regex":".*\\b[A-Za-z]*az\\b.*"}}
+{"translation":{"en":"lines that contain any numbers.","regex":".*[0-9].*"}}
+{"translation":{"en":"lines utilizing the number '1'.","regex":".*1.*"}}
+{"translation":{"en":"lines that use the word 'white'","regex":".*\\bwhite\\b.*"}}
+{"translation":{"en":"lines which do not have numbers.","regex":"~(.*[0-9].*)"}}
+{"translation":{"en":"lines that end with numbers.","regex":".*[0-9]"}}
+{"translation":{"en":"lines containing words that  have 5 letters in them.","regex":".*\\b[A-Za-z]{5}\\b.*"}}
+{"translation":{"en":"lines with instances of 'at'.","regex":".*at.*"}}
+{"translation":{"en":"lines which contain 'x' and 'y'.","regex":"(.*x.*)&(.*y.*)"}}
+{"translation":{"en":"lines that do not use the word 'the'","regex":"~(.*\\bthe\\b.*)"}}
+{"translation":{"en":"lines that contain either of 'y' or 'z'","regex":".*(y|z).*"}}
+{"translation":{"en":"lines using three letter words.","regex":".*\\b[A-Za-z]{3}\\b.*"}}
+{"translation":{"en":"lines containing the word 'laughing'.","regex":".*\\blaughing\\b.*"}}
+{"translation":{"en":"lines containing the word 'trade'.","regex":".*\\btrade\\b.*"}}
+{"translation":{"en":"lines where the word 'and' appears between the words 'sand' and 'tide'","regex":".*\\bsand\\b.*\\band\\b.*\\btide\\b.*|.*\\btide\\b.*\\band\\b.*\\bsand\\b.*"}}
+{"translation":{"en":"lines with numbers","regex":".*[0-9].*"}}
+{"translation":{"en":"lines that contain a period after a number, but only if before 'ABC'.","regex":".*[0-9].*\\..*ABC.*"}}
+{"translation":{"en":"lines that contain at least 2 vowels in a word.","regex":".*((\\b[A-Za-z]+\\b)&(.*[AEIOUaeiou].*){2}).*"}}
+{"translation":{"en":"lines that have two words containing 5 or more letters.","regex":"(.*\\b[A-Za-z]{5,}\\b.*){2}"}}
+{"translation":{"en":"lines using 'life' or 'lives'","regex":".*(life|lives).*"}}
+{"translation":{"en":"lines that have 4 characters","regex":".{4}"}}
+{"translation":{"en":"lines that end in '!' but do not contain 'surprise'.","regex":"(.*\\!)&(~(.*surprise.*))"}}
+{"translation":{"en":"lines with three numbers and the word 'kitten'.","regex":"(.*[0-9].*){3}&(.*\\bkitten\\b.*).*"}}
+{"translation":{"en":"lines that have no letters.","regex":"~(.*[A-Za-z].*)"}}
+{"translation":{"en":"lines using 'art' or 'led'","regex":".*(art|led).*"}}
+{"translation":{"en":"lines containing the word 'house'.","regex":".*\\bhouse\\b.*"}}
+{"translation":{"en":"lines that utilize the number '7'.","regex":".*7.*"}}
+{"translation":{"en":"lines using 3 instances of 'b'","regex":".*(.*b.*){3}.*"}}
+{"translation":{"en":"lines that include words with 'ra'.","regex":".*((\\b[A-Za-z]+\\b)&(.*ra.*)).*"}}
+{"translation":{"en":"lines having words ending with 'oo'.","regex":".*((\\b[A-Za-z]+\\b)&(.*oo)).*"}}
+{"translation":{"en":"lines that contain 3 words.","regex":"(.*\\b[A-Za-z]+\\b.*){3}"}}
+{"translation":{"en":"lines using 7 'f'","regex":"(.*f.*){7}"}}
+{"translation":{"en":"lines that contain the word 'bar'","regex":".*\\bbar\\b.*"}}
+{"translation":{"en":"lines that contain 'wig' after 'er' or 'let'.","regex":".*(er|let).*wig.*"}}
+{"translation":{"en":"lines that contain words using the letters 'ant'","regex":".*\\b[A-Za-z]*ant[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that ends with 'ABC' and contain two numbers.","regex":"(.*[0-9].*){2}ABC"}}
+{"translation":{"en":"lines containing only one word","regex":"([^A-Za-z])*\\b[A-Za-z]+\\b([^A-Za-z])*"}}
+{"translation":{"en":"lines that contain the text, 'New York'.","regex":".*New York.*"}}
+{"translation":{"en":"lines using the word 'hurry' followed by the word 'up'.","regex":"(.*\\bhurry\\b.*)(.*\\bup\\b.*)"}}
+{"translation":{"en":"lines which do have numbers.","regex":".*[0-9].*"}}
+{"translation":{"en":"lines that utilize the '$' symbol.","regex":".*(.*\\$.*)"}}
+{"translation":{"en":"lines where there are three characters between instances of 'ABC' and 'WEX'","regex":".*ABC.*.{3}.*WEX.*|.*WEX.*.{3}.*ABC.*"}}
+{"translation":{"en":"lines containing 'oo' and 'at'.","regex":"(.*oo.*)&(.*at.*)"}}
+{"translation":{"en":"lines that have more than 5 words ending with a 'c.'","regex":"(.*\\b[A-Za-z]*c\\b.*){6,}"}}
+{"translation":{"en":"lines containing 'left' and also containing 'right'","regex":"(.*left.*)&(.*right.*)"}}
+{"translation":{"en":"lines that contain 'dre' or 'ber'","regex":".*(dre|ber).*"}}
+{"translation":{"en":"lines using a 3 letter sequence starting with 'n'","regex":".*n[A-Za-z]{2}.*"}}
+{"translation":{"en":"lines that start with the letter 'c'","regex":"c.*"}}
+{"translation":{"en":"lines with 'un'","regex":".*un.*"}}
+{"translation":{"en":"lines that have 'oe'.","regex":".*oe.*"}}
+{"translation":{"en":"lines that do not contain a number.","regex":"~(.*[0-9].*)"}}
+{"translation":{"en":"lines containing 'ch' or 'dh'","regex":".*(ch|dh).*"}}
+{"translation":{"en":"lines that contain 'tran' and the word 'nguyen'.","regex":"(.*tran.*)&(.*\\bnguyen\\b.*)"}}
+{"translation":{"en":"lines containing '8' and containing a '3' as well.","regex":".*(.*8.*)&(.*3.*).*"}}
+{"translation":{"en":"lines that have the letter 'X' at the end of a word.","regex":".*\\b[A-Za-z]*X\\b.*"}}
+{"translation":{"en":"lines using at least 4 characters","regex":".*.{4}.*"}}
+{"translation":{"en":"lines that have the word 'laugh', and at least 1 number.","regex":"(.*\\blaugh\\b.*)&(.*[0-9].*)"}}
+{"translation":{"en":"lines that contain the words 'the' and  'cold'.","regex":"(.*\\bthe\\b.*)&(.*\\bcold\\b.*)"}}
+{"translation":{"en":"lines using 'pid' immediately after 'stu'","regex":".*stupid.*"}}
+{"translation":{"en":"lines that start with 'news'","regex":"news.*"}}
+{"translation":{"en":"lines in which there are words that begin with 'th'.","regex":".*\\bth[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that begin with the word 'Topo'.","regex":"\\bTopo\\b.*"}}
+{"translation":{"en":"lines that contain words using aught in them.","regex":".*(.*\\b[A-Za-z]*aught[A-Za-z]*\\b.*).*"}}
+{"translation":{"en":"lines that use 'mo' followed by words starting with 'fo'","regex":".*mo.*((\\b[A-Za-z]+\\b)&(fo.*)).*"}}
+{"translation":{"en":"lines utilizing the number '2'.","regex":".*2.*"}}
+{"translation":{"en":"lines that contain at least one vowel in each word.","regex":"~(.*((\\b[A-Za-z]+\\b)&([^AEIOUaeiou]*)).*)"}}
+{"translation":{"en":"lines ending with 'fer'","regex":".*fer"}}
+{"translation":{"en":"lines composed of at least 3 words of 4 or more letters","regex":"(.*\\b[A-Za-z]{4,}\\b.*){3,}"}}
+{"translation":{"en":"lines that have at least five words that start with a vowel.","regex":"(.*\\b[AEIOUaeiou][A-Za-z]*\\b.*){5}"}}
+{"translation":{"en":"lines that use the '@' symbol","regex":".*\\@.*"}}
+{"translation":{"en":"lines that have three words of five letters each.","regex":"(.*\\b[A-Za-z]{5}\\b.*){3}"}}
+{"translation":{"en":"lines that begin with the word 'the'.","regex":"the\\b.*"}}
+{"translation":{"en":"lines of 6 characters that end with the letter 's'.","regex":".{5}s"}}
+{"translation":{"en":"lines that contain the word 'tron' but not 'bot'.","regex":"(.*tron.*)&(~(.*bot.*))"}}
+{"translation":{"en":"lines that have 'efg' followed by the word 'car'","regex":".*efg.*\\bcar\\b.*"}}
+{"translation":{"en":"lines that contain words starting with the letter 'g'","regex":".*\\bg[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain 5 or less words that have 4 or more letters where one of those letters is an 'a'.","regex":"([^A-Za-z]*((\\b[A-Za-z]+\\b)&([A-Za-z]{4,})&(.*a.*))[^A-Za-z]*){0,5}"}}
+{"translation":{"en":"lines that contain words starting with 'da'.","regex":".*\\bda[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that have the numbers '12345' and '54321'.","regex":"(.*12345.*)&(.*54321.*)"}}
+{"translation":{"en":"lines that have words that start with 'b'.","regex":".*\\bb[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that contain at least one word without any vowels.","regex":".*((\\b[A-Za-z]+\\b)&(~(.*[AEIOUaeiou].*))).*"}}
+{"translation":{"en":"2 letter lines","regex":"[A-Za-z]{2}"}}
+{"translation":{"en":"lines using words that end with a vowel.","regex":".*\\b[A-Za-z]*[aeiouAEIOU]\\b.*"}}
+{"translation":{"en":"lines that have words ending with 'as'.","regex":".*((\\b.*as\\b)&([A-Za-z]+)).*"}}
+{"translation":{"en":"lines using at least 5 characters","regex":".*.{5}.*"}}
+{"translation":{"en":"lines where numbers exist only after a sequence of 'ABC' and 'XYZ'","regex":"([^0-9]*)|((([^0-9]*)&(.*ABC.*)&(.*XYZ.*)).*)"}}
+{"translation":{"en":"lines with 'bit' and not 'ch'.","regex":"(.*bit.*)&(~(.*ch.*))"}}
+{"translation":{"en":"lines which have 'ing' and 'out' but not 'sh' or 'cl'.","regex":"((.*ing.*)&(.*out.*)&(~(.*(sh|cl).*)))"}}
+{"translation":{"en":"lines that start with 'A' or An","regex":"A.*|An.*"}}
+{"translation":{"en":"lines using more than 5 characters","regex":".*.{6,}.*"}}
+{"translation":{"en":"lines which contain multiple quoted words.","regex":"(.*\\'[A-Za-z]+\\'.*){2,}"}}
+{"translation":{"en":"lines that contain the word 'Kelly' but do not contain the word 'Chris'.","regex":"(.*\\bKelly\\b.*)&(~(.*\\bChris\\b.*))"}}
+{"translation":{"en":"lines that only contain vowels.","regex":"[AEIOUaeiou]*"}}
+{"translation":{"en":"lines that have words ending in 'ing' or 'est'.","regex":".*\\b[A-Za-z]*(ing|est)\\b.*"}}
+{"translation":{"en":"lines with 'Quasi' as a stand alone word.","regex":".*\\bQuasi\\b.*"}}
+{"translation":{"en":"lines containing the word 'tag'.","regex":".*\\btag\\b.*"}}
+{"translation":{"en":"lines containing both letters and numbers, but no capitals.","regex":"(.*[A-Za-z].*)&(.*[0-9].*)&(~(.*[A-Z].*))"}}
+{"translation":{"en":"lines using at least two numbers, 'aby', and 'oz'.","regex":"(.*[0-9].*){2}&(.*aby.*)&(.*oz.*)"}}
+{"translation":{"en":"lines that utilize the number '1'","regex":".*1.*"}}
+{"translation":{"en":"lines containing the letter 'z' but not the letter 'q'.","regex":"(.*z.*)&(~(.*q.*))"}}
+{"translation":{"en":"lines containing 3 letter words starting with 'z'","regex":".*\\bz[A-Za-z]{2}\\b.*"}}
+{"translation":{"en":"lines using a word starting with a vowel and ending with 'y'","regex":".*\\b[AEIOUaeiou][A-Za-z]*y\\b.*"}}
+{"translation":{"en":"lines that use words ending in 'g'","regex":".*((.*g)&(\\b[A-Za-z][A-Za-z]*\\b)).*"}}
+{"translation":{"en":"lines with words matching the word 'fur'.","regex":".*\\bfur\\b.*"}}
+{"translation":{"en":"lines that start with 'an'","regex":"an.*"}}
+{"translation":{"en":"lines utilizing words with 'be'.","regex":".*((\\b[A-Za-z]+\\b)&(.*be.*)).*"}}
+{"translation":{"en":"lines in which all words start with the letter 'a'.","regex":"~(.*((\\b[A-Za-z]+\\b)&([^a].*)).*)"}}
+{"translation":{"en":"lines that begin with a vowel and end with a vowel","regex":"[aeiouAEIOU](.*[aeiouAEIOU])?"}}
+{"translation":{"en":"lines that contain words starting with 'na'.","regex":".*\\bna[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that mention 'fireflies' but not 'butterflies'.","regex":"(.*fireflies.*)&(~(.*butterflies.*))"}}
+{"translation":{"en":"lines having the letter 'x'.","regex":".*x.*"}}
+{"translation":{"en":"lines which contain 'q' and 'u'","regex":".*q.*u.*|.*u.*q.*"}}
+{"translation":{"en":"lines using 'ly' or 'ny'","regex":".*(ly|ny).*"}}
+{"translation":{"en":"lines that start with 'Transport One' and end in a number.","regex":"Transport One.*[0-9]"}}
+{"translation":{"en":"lines that end with '...'","regex":".*\\.\\.\\."}}
+{"translation":{"en":"lines containing 3 or more ';'","regex":"(.*;.*){3,}"}}
+{"translation":{"en":"lines that contain 'I' in each word.","regex":"~(.*((\\b[A-Za-z]+\\b)&([^I]*)).*)"}}
+{"translation":{"en":"lines that contain the phrase 'bedrock' or 'yabadabadoo'.","regex":".*(bedrock|yabadabadoo).*"}}
+{"translation":{"en":"lines that contain words starting with 'ge'.","regex":".*\\bge[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines containing words that end with s.","regex":".*\\b[A-Za-z]*s\\b.*"}}
+{"translation":{"en":"lines using words which have a vowel.","regex":".*\\b[A-Za-z]*[aeiouAEIOU][A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines using 'an' before 'imal'","regex":".*an.*imal.*"}}
+{"translation":{"en":"lines that contain 'if' before 'then' or 'else'.","regex":".*if.*(then|else).*"}}
+{"translation":{"en":"lines using words that begin with the letter 'G'.","regex":".*\\bG[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines containing words ending with 'mie'.","regex":".*\\b[A-Za-z]*mie\\b.*"}}
+{"translation":{"en":"lines that start with 'gates'","regex":"gates.*"}}
+{"translation":{"en":"lines composed of 3 or more characters","regex":".*.{3,}.*"}}
+{"translation":{"en":"lines that start with 'Al' but do not contain any numbers.","regex":"(Al.*)&(~(.*[0-9].*))"}}
+{"translation":{"en":"lines using words ending in 'ness'","regex":".*\\b[A-Za-z]*ness\\b.*"}}
+{"translation":{"en":"lines with words that end with 'ca' before words that end with 'att'","regex":".*\\b[A-Za-z]*ca\\b.*\\b[A-Za-z]*att\\b.*"}}
+{"translation":{"en":"lines that contain words with 'ci'.","regex":".*((\\b[A-Za-z]+\\b)&(.*ci.*)).*"}}
+{"translation":{"en":"lines containing words ending in 're'","regex":".*\\b[A-Za-z]*re\\b.*"}}
+{"translation":{"en":"lines that use only four words","regex":"(([^A-Za-z])*\\b[A-Za-z]+\\b([^A-Za-z])*){4}"}}
+{"translation":{"en":"lines ending with the letter 'f'","regex":".*f"}}
+{"translation":{"en":"lines that end in 't'","regex":".*t"}}
+{"translation":{"en":"lines that start with the letter 't'.","regex":"t.*"}}
+{"translation":{"en":"lines containing a 5 letter word beginning with 't'","regex":".*\\bt[A-Za-z]{4}\\b.*"}}
+{"translation":{"en":"lines ending with 'uns'","regex":".*uns"}}
+{"translation":{"en":"lines ending with 'end'","regex":".*end"}}
+{"translation":{"en":"lines that contain 'day' or 'to'","regex":".*(day|to).*"}}
+{"translation":{"en":"lines that contain at least one word and the number '12'","regex":".*(.*\\b[A-Za-z]+\\b.*)&(.*12.*).*"}}
+{"translation":{"en":"lines ending with 'wrench' that use the word 'monkey'.","regex":".*\\bmonkey\\b.*wrench"}}
+{"translation":{"en":"lines that contain at least one digit.","regex":".*[0-9].*"}}
+{"translation":{"en":"lines starting and ending with 'a'","regex":"a(.*a)?"}}
+{"translation":{"en":"lines that have 'car'","regex":".*car.*"}}
+{"translation":{"en":"lines of words whose last letters are 'ing'.","regex":".*\\b[A-Za-z]*ing\\b.*"}}
+{"translation":{"en":"lines beginning with the letter 's' and ending with the letter 'y'","regex":"s.*y"}}
+{"translation":{"en":"lines that use words ending with 'es'.","regex":".*\\b[A-Za-z]*es\\b.*"}}
+{"translation":{"en":"lines that have 3 characters after the first vowel","regex":".*[AEIOUaeiou].*(.{3}).*"}}
+{"translation":{"en":"lines ending in 'z' preceded by a word that ends in 'nt'","regex":".*\\b[A-Za-z]*nt\\b.*z"}}
+{"translation":{"en":"lines using the word 'day' followed by the letters 'abc'","regex":".*\\bday\\b.*abc.*"}}
+{"translation":{"en":"lines that contain words starting with 'gu'.","regex":".*\\bgu[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that have the word 'pray'.","regex":".*\\bpray\\b.*"}}
+{"translation":{"en":"lines that contain words between 'I' and 'you'","regex":".*I.*\\b[A-Za-z]+\\b.*you.*|.*you.*\\b[A-Za-z]+\\b.*I.*"}}
+{"translation":{"en":"lines that contain 3 words with at least 1 number in between the 1st and 3rd word.","regex":"[^A-Za-z]*\\b[A-Za-z]+\\b((.*\\b[A-Za-z]+\\b.*)&(.*[0-9].*))\\b[A-Za-z]+\\b[^A-Za-z]*"}}
+{"translation":{"en":"lines containing the text 'and so it came to pass'","regex":".*and so it came to pass.*"}}
+{"translation":{"en":"lines with 'helper' where the word 'little' does not appear before 'helper' in that line.","regex":"(.*helper.*)&(~(.*\\blittle\\b.*helper.*))"}}
+{"translation":{"en":"lines that have a word ending with the letters 'ked'.","regex":".*\\b[A-Za-z]*ked\\b.*"}}
+{"translation":{"en":"lines that each begin with a vowel","regex":"[AEIOUaeiou].*"}}
+{"translation":{"en":"lines ending in 'fuzz'","regex":".*fuzz"}}
+{"translation":{"en":"lines using 6 'e'","regex":"(.*e.*){6}"}}
+{"translation":{"en":"lines that contain words starting with a vowel and ending with a vowel.","regex":".*((\\b[A-Za-z]+\\b)&([AEIOUaeiou].*)&(.*[AEIOUaeiou])).*"}}
+{"translation":{"en":"lines that contain words using 'oo' in them.","regex":".*\\b[A-Za-z]*oo[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines which contain 'out'","regex":".*out.*"}}
+{"translation":{"en":"lines using words ending with 'tu'.","regex":".*\\b[A-Za-z]*tu\\b.*"}}
+{"translation":{"en":"lines having 'sh' after 'wi' and 'st' before 'ar'.","regex":".*((.*wi.*sh.*)&(.*st.*ar.*)).*"}}
+{"translation":{"en":"lines that start with the word 'The'","regex":"The\\b.*"}}
+{"translation":{"en":"lines that contain more than five words.","regex":"(.*\\b[A-Za-z]+\\b.*){6,}"}}
+{"translation":{"en":"lines that do not contain the letter 'c'.","regex":"~(.*c.*)"}}
+{"translation":{"en":"lines starting with 'the'","regex":"the.*"}}
+{"translation":{"en":"lines that contain words ending with a vowel.","regex":".*\\b[A-Za-z]*[AEIOUaeiou]\\b.*"}}
+{"translation":{"en":"lines that contain at least one word which is 8 characters or longer","regex":".*((\\b[A-Za-z]+\\b)&(.{8,})).*"}}
+{"translation":{"en":"lines that contain words ending with 'el'.","regex":".*((\\b[A-Za-z]+\\b)&(.*el)).*"}}
+{"translation":{"en":"lines containing words that end with 'P'","regex":".*((\\b.*P\\b)&([A-Za-z]+)).*.*"}}
+{"translation":{"en":"lines using a word which has uppercase letters and has lowercase letters","regex":".*\\b(([A-Za-z]*[A-Z][A-Za-z]*)&([A-Za-z]*[a-z][A-Za-z]*))\\b.*"}}
+{"translation":{"en":"lines that contain words with 're'.","regex":".*\\b[A-Za-z]*re[A-Za-z]*\\b.*"}}
+{"translation":{"en":"lines that start with the letter 'a' and end with the letter 'c'","regex":"a.*c"}}
+{"translation":{"en":"lines that have three characters before the sequence 'SBC'","regex":".*.{3}SBC.*"}}
+{"translation":{"en":"lines using the letter pair 'no'","regex":".*no.*"}}
+{"translation":{"en":"lines containing 3 or more vowels.","regex":"(.*[AEIOUaeiou].*){3,}"}}
+{"translation":{"en":"lines which contain a word using 2 or more letters","regex":".*\\b[A-Za-z]{2,}\\b.*"}}
+{"translation":{"en":"lines that contain 'er' at the end of every word.","regex":"~(.*((\\b[A-Za-z]+\\b)&(~(.*er))).*)"}}
+{"translation":{"en":"lines using 4 instances of 'ug'","regex":".*(.*ug.*){4}.*"}}
+{"translation":{"en":"lines that do not have 'the' in them","regex":"~(.*the.*)"}}
+{"translation":{"en":"lines containing at least one uppercase letter, and at least one lowercase letter","regex":"(.*[A-Z].*)&(.*[a-z].*)"}}
+{"translation":{"en":"lines that contain the phrase 'Wednesday' but not 'Sunday'.","regex":"(.*Wednesday.*)&(~(.*Sunday.*))"}}
+{"translation":{"en":"lines containing the word 'revolution'.","regex":".*\\brevolution\\b.*"}}
+{"translation":{"en":"lines ending with 'xyz'","regex":".*xyz"}}
+{"translation":{"en":"lines that contain a nine letter word.","regex":".*\\b[A-Za-z]{9}\\b.*"}}
+{"translation":{"en":"lines with fox that do not contain the word chicken.","regex":"(.*fox.*)&(~(.*\\bchicken\\b.*))"}}
+{"translation":{"en":"lines utilizing words ending with 'fe'.","regex":".*((\\b[A-Za-z]+\\b)&(.*fe)).*"}}
+{"translation":{"en":"lines that do not have any word consisting of 4 letters.","regex":"~(.*\\b[A-Za-z]{4}\\b.*)"}}
+{"translation":{"en":"lines which start with 'oocl'","regex":"oocl.*"}}
+{"translation":{"en":"lines that do not contain numerical characters.","regex":"~(.*[0-9].*)"}}
+{"translation":{"en":"lines using 'gophers' and containing the words 'grass' and 'seeds'.","regex":"(.*gophers.*)&(.*\\bgrass\\b.*)&(.*\\bseeds\\b.*)"}}
+{"translation":{"en":"lines containing 'annou' and 'irth' that do not have a 'c' anywhere.","regex":"(.*annou.*)&(.*irth.*)&(~(.*c.*))"}}
+{"translation":{"en":"lines using 'x' before 'z'","regex":".*x.*z.*"}}
+{"translation":{"en":"lines beginning with the letter 'f'","regex":"f.*"}}
+{"translation":{"en":"4 letter lines","regex":"[A-Za-z]{4}"}}
+{"translation":{"en":"lines using numbers that show two or more '0'.","regex":".*(.*0.*){2,}.*"}}
